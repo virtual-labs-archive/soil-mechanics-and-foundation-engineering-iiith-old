@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jnlp spec="1.0+" codebase="" href="">
+    <information>
+        <title>Attenberg Limits</title>
+
+        <vendor>EERC</vendor>
+    </information>
+    <resources>
+        <!-- Application Resources -->
+        <j2se version="1.5+"
+              href="http://java.sun.com/products/autodl/j2se"
+              max-heap-size="256m" />
+
+        <jar href="vlab2.jar" main="true" />
+
+    </resources>
+    <applet-desc 
+         name="Attenberg Demo Applet"
+         main-class="com.vlab.geo.AttenbergLimits$MyApplet"
+         width="300"
+         height="300">
+     </applet-desc>
+</jnlp>	
