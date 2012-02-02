@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jnlp spec="1.0+" codebase="" href="">
+    <information>
+        <title>Permeability Experiment</title>
+
+        <vendor>EERC</vendor>
+    </information>
+    <resources>
+        <!-- Application Resources -->
+        <j2se version="1.5+"
+              href="http://java.sun.com/products/autodl/j2se"
+              max-heap-size="128m" />
+
+        <jar href="vlab2.jar" main="true" />
+
+    </resources>
+    <applet-desc 
+         name="Mouth Piece"
+         main-class="com.vlab.geo.permeability$MyApplet"
+         width="300"
+         height="300">
+     </applet-desc>
+</jnlp>	
