@@ -38,10 +38,10 @@ $data['nav'] = $nav;
 
 
 $vlab_url = "http://virtual-labs.ac.in/"; 
-$css_js   = "http://deploy.virtual-labs.ac.in/labs/eerc02/"; 
-$lab_url  = "http://deploy.virtual-labs.ac.in/labs/eerc02/index.php";
-$exp_url  =  "http://deploy.virtual-labs.ac.in/labs/eerc02/exp3/index.php";
-$base_url = $exp_url;
+$css_js   = "../";
+ $lab_url  = "http://".$_SERVER['HTTP_HOST'] . "/labs/eerc02/index.php";
+$exp_url  = "http://".$_SERVER['HTTP_HOST'] . "/labs/eerc02/exp3/index.php";
+$base_url = "http://".$_SERVER['HTTP_HOST'] . $_SERVER['SCRIPT_NAME']; 
 
 include('../exp_template.php');
 
