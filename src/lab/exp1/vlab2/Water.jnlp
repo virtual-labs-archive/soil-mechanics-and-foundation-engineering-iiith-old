@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jnlp spec="1.0+" codebase="" href="">
+    <information>
+        <title>Water Content Demo</title>
+
+        <vendor>Water Content Demo</vendor>
+    </information>
+    <resources>
+        <!-- Application Resources -->
+        <j2se version="1.5+"
+              href="http://java.sun.com/products/autodl/j2se"
+              max-heap-size="128m" />
+
+        <jar href="work3.jar" main="true" />
+
+    </resources>
+    <applet-desc 
+         name="Water Content Applet"
+         main-class="com.vlab.geo.WaterContent$MyApplet"
+         width="300"
+         height="300">
+     </applet-desc>
+</jnlp>	

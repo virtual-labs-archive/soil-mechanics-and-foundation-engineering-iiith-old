@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jnlp spec="1.0+" codebase="" href="">
+    <information>
+        <title>Unit Weight Demo</title>
+
+        <vendor>Unit weight Demo</vendor>
+    </information>
+    <resources>
+        <!-- Application Resources -->
+        <j2se version="1.5+"
+              href="http://java.sun.com/products/autodl/j2se"
+              max-heap-size="128m" />
+
+        <jar href="virtual.jar" main="true" />
+
+    </resources>
+    <applet-desc 
+         name="Unit weight Applet"
+         main-class="eerc.vlab.demos.Unitweight$MyApplet"
+         width="300"
+         height="300">
+     </applet-desc>
+</jnlp>	
