@@ -1,0 +1,12 @@
+#/bin/bash
+# backup Script for soil-mechanics-and-foundation-engineering lab
+
+# backup Script takes the backup of the data used by the lab.
+# Since there is no data being used by soil-mechanics-and-foundation-engineeringlab, 
+# the script does nothing. 
+# Usage of the script
+
+# To use backup script, run the command
+# ./scripts/backup
+ 
+

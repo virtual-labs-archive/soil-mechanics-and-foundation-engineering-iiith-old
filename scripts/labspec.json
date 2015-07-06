@@ -6,9 +6,8 @@
                 "build_steps": {
                     "build": ["make -C ../src"], 
                     "configure": [], 
-                    "post_build": ["sudo service apache2 restart"], 
-                    "pre_build": ["sudo apt-get update",
-                "sudo apt-get install -y php5 apache2"], 
+                    "post_build": [], 
+                    "pre_build": [], 
                     "status": []
                 }, 
                 "installer": [], 
@@ -114,7 +113,7 @@
                 "Civil Engineering"
             ], 
             "id": "eerc02", 
-            "integration_level": 4, 
+            "integration_level": 6, 
             "name": "Soil Mechanics & Foundation Engineering", 
             "server-side": true, 
             "status": "Released", 
@@ -124,7 +123,7 @@
             "platform": {
                 "arch": "i386", 
                 "hosting": "dedicated", 
-                "installer": [], 
+                "installer": ["sudo apt-get update","sudo apt-get install -y php5 apache2"], 
                 "lab_actions": {
                     "backup": [], 
                     "clean": [], 
