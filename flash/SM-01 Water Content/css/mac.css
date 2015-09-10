@@ -1,0 +1,215 @@
+/*--- layout ---*/
+html { background-color: #f7f7f7; }
+body { width: 982px; margin: 0 auto; background-color: transparent; }
+#main { width: 980px; margin: 0 auto; }
+#content { padding: 14px 0 0; }
+
+/* panel */
+#navbar{
+	width:auto;
+	height:36px;
+	background: url(../images/navbar-bg.jpg) left top repeat-x;
+}
+#navbar .inbar{
+	display:block;
+	height:36px;
+	background: url../images/right-round.jpg) right top no-repeat;
+}
+#navbar ul, #navbar ul li{
+	border:0px;
+	margin:0px;
+	padding:0px;
+	list-style:none;
+	height:36px;
+	line-height:36px;
+}
+#navbar ul{
+	background: url(../images/left-round.jpg) left top no-repeat;
+}
+#navbar ul li{
+	float:left;
+	display:inline-block;
+	line-height:36px;
+}
+#navbar ul li a{
+	color: white;
+	text-decoration:none;
+	font-size:13;
+	display:inline-block;
+}
+#navbar ul li a span{
+	padding:0 20px 0 0;
+	height:36px;
+	line-height:36px;
+	display:inline-block;
+	margin-left:20px;
+}
+
+
+#navbar ul li a:hover{
+	color: #bbbbbb;
+}
+
+#navbar .navhome a span {
+	text-decoration: underline;
+}
+
+/* boxes and layout
+------------------------*/
+.grid3cola { width: 984px; margin: 0 -2px; }
+.grid3cola .column { width: 600px; margin-left: 6px; }
+.grid3cola .column.first,
+.grid3cola .column.last { width: 186px; }
+
+#content,
+#main .sidebar { color: #333; }
+#main .sidebar { font-size: 11px; line-height: 14px; }
+#main .sidebar a.more { padding-right: 8px; background-position: 100% .4em; }
+
+#main a.arrow { display: block; padding-right: 10px; background: url(http://images.apple.com/mac/home/elements/arrow20090106.gif) no-repeat 100% 50%; _position: relative; }
+
+/* boxes */
+#content .box { position: relative; width: 560px; padding: 0 20px 1px; overflow: hidden; background: #fff url(http://images.apple.com/mac/home/elements/box_bg20090106.gif) repeat-y 0 0; zoom: 1; }
+#content .box .cap { position: absolute; width: 600px; height: 6px; margin: 0 -20px; font-size: 1px; behavior: url(/global/scripts/lib/iepngfix.htc); }
+#content .box .cap.top { top: 0; background: url(http://images.apple.com/mac/home/elements/box_bgtop20090106.png) no-repeat 0 0; *margin-left: -2px; }
+#content .box .cap.bottom { bottom: 0; background: url(http://images.apple.com/mac/home/elements/box_bgbottom20090106.png) no-repeat 0 100%; }
+#content .box .gradient { width: 560px; margin: 0 -18px; padding: 0 18px; overflow: hidden; background: #fff url(http://images.apple.com/mac/home/elements/box_bggrad20090106.gif) repeat-x 0 100%; }
+
+#content .sidebar .box { width: 162px; padding: 0 12px 1px; background-image: url(http://images.apple.com/mac/home/elements/box_sidebar_bg20090106.gif); }
+#content .sidebar .box .cap { width: 186px; margin: 0 -12px; left: 12px; }
+#content .sidebar .box .cap.top { background-image: url(http://images.apple.com/mac/home/elements/box_sidebar_bgtop20090106.png); }
+#content .sidebar .box .cap.bottom { background-image: url(http://images.apple.com/mac/home/elements/box_sidebar_bgbottom20090106.png); }
+
+#content .box.full { background: #fff url(http://images.apple.com/mac/home/elements/box_full_bg20090608.gif) repeat-y 0 0; }
+#content .box.full .cap.top { width: 980px; background-image: url(http://images.apple.com/mac/home/elements/box_full_bgtop20090608.png); }
+#content .box.full .cap.bottom { width: 980px; background-image: url(http://images.apple.com/mac/home/elements/box_full_bgbottom20090608.png); *position: relative; }
+
+#content .box h2 { margin: 0 -18px; padding: 6px 10px 4px; color: #4d4d4d; font-weight: normal; font-size: 16px; border-bottom: 1px solid #d9d9d9; background: #dfdfdf url(http://images.apple.com/mac/home/elements/box_header20090106.gif) repeat-x 0 0; }
+#content .box h2 a { color: #262626; }
+#content .sidebar .box h2 { margin: 0 -10px; }
+
+#content .box ul { _width: 100%; _position: relative; margin: 0 -10px; padding: 0 10px; _padding: 0 0 0 20px; overflow: hidden; }
+#content .box ul li { margin: 0 0 -1px; padding: 1.1em 0; border-bottom: 1px solid #d9d9d9; }
+
+#content .box p { margin-top: .3em; margin-bottom: 0; }
+#content .box img { display: block; }
+#content .box img.flush { margin: 0 -10px; }
+
+#content .box h3,
+#content .box strong { display: block; color: #000; font-size: 14px; line-height: 16px; font-weight: normal; }
+#content .box h3 a,
+#content .box strong a { color: #000; }
+#content .box h3 a:hover,
+#content .box strong a:hover { color: #08c; }
+#content .box em { font-style: normal; color: #a9a9a9 !important; }
+#content .box h4 { color: #aaa; font-size: 10px; font-weight: normal; }
+
+#content .box a { color: #333; text-decoration: none; }
+#content .box ul li a:hover,
+#content .box ul li a:hover * { color: #08c; cursor: pointer; }
+#content .box a.more { color: #08c; }
+#content .box a.more:hover { color: #08c; text-decoration: underline; }
+
+/* top section
+------------------------*/
+#content .upper .box { min-height: 427px; _height: 427px; }
+#content .lower .box { min-height: 536px; *height: 536px; }
+
+/* getamac */
+
+
+/* promos */
+
+
+/* find out how */
+
+
+/* in action */
+
+
+/* buy */
+
+
+/* movie panel */
+#content .showcase #qtview { position: relative; width: 560px; padding-top: 373px; *height: 1px; margin-top: 31px; }
+#content .showcase #qtview .qtcontent { position: absolute; width: 560px; height: 373px; top: 0; }
+
+/*position: absolute;*/
+#content .showcase #qtview img { position: absolute;  z-index: 1; left: 0; }
+#content .showcase #qtview ul { position: relative; padding: 155px 0 0; text-align: center; z-index: 1; }
+#content .showcase #qtview ul li { display: block; padding: 0; border: none; }
+
+#content .showcase #qtview .endState { width: 560px; height: 352px; background: #000; }
+#content .showcase #qtview .endState img { top: 0; opacity: .7; -moz-opacity: .7; filter: alpha(opacity=70); }
+
+/* top module
+------------------------*/
+
+#content .box.full { width: auto; }
+
+#content .grid3col.lower { margin-bottom: 12px; }
+#content .grid3col.lower .column.first.featuredtutorials { width: 180px; }
+#content .grid3col.lower .column.last.alltutorials { width: 165px; }
+#content .grid3col.lower .column.showcase { margin-left: 6px; }
+#content .grid3col.lower li.title { padding: 0; border: none; }
+#content .grid3col.lower li.title p { font-size: 11px; margin-bottom: 5px; }
+#content .grid3col.lower .box { min-height: 448px; *height: 453px; }
+
+/* pill buttons */
+#content .showcase #qtview a.pillbutton { display: inline-block; position: relative; padding-right: 43px; font-size: 15px; line-height: 1.3em; color: #fff; text-decoration: none; outline: none; z-index: 2; }
+#content .showcase #qtview a.pillbutton span,
+#content .showcase #qtview a.pillbutton b { display: block; width: auto; padding: 15px 0; text-align: left; }
+#content .showcase #qtview a.pillbutton span { padding-right: 8px; padding-left: 25px; background: url(http://images.apple.com/global/elements/buttons/pillbevel_leftcap.png) no-repeat 0 50%; _background-image: url(http://images.apple.com/global/elements/buttons/pill_leftcap.gif); }
+#content .showcase #qtview a.pillbutton b { position: absolute; width: 43px; top: 0; right: 0; text-indent: -9999px; background: url(http://images.apple.com/global/elements/buttons/pillbevel_rightcap.png) no-repeat 0 50%; _background-image: url(http://images.apple.com/global/elements/buttons/pill_rightcap.gif); }
+#content .showcase #qtview a.pillbutton:hover,
+#content .showcase #qtview a.pillbutton:hover *,
+#content .showcase #qtview a.pillbutton:focus { color: #e6e6e6; }
+
+#content .showcase #qtview a.pillbutton, x: -moz-any-link { display: block; width: 8.5em; margin: 0 auto; } /* this is for firefox2 because it's dumb when it comes to inline-block */
+#content .showcase #qtview .endState a.pillbutton, x: -moz-any-link { width: 16em; } /* this is for firefox2 because it's dumb when it comes to inline-block */
+#content .showcase #qtview a.pillbutton, x: -moz-any-link, x: default,
+#content .showcase #qtview .endState a.pillbutton, x: -moz-any-link, x: default { display: inline-block; width: auto; } /* firefox3 reset */
+
+/* qt controller */
+
+
+/* movie nav */
+#content .showcase ul.qtnav { width: 568px; margin: 8px -4px 14px; padding: 0; text-align: center; zoom: 1; }
+#content .showcase ul.qtnav li { float: left; width: 136px; margin: 0 3px; padding: 0; border-bottom: none; display: inline; }
+#content .showcase ul.qtnav li a { position: relative; display: block; padding: 13px 0; color: #000; background: url(http://images.apple.com/mac/home/elements/showcase_qtnav20090106.gif) no-repeat 0 0; font-size: 10px; }
+#content .showcase ul.qtnav li a span { position: relative; top: 4px; }
+#content .showcase ul.qtnav li a em { position: absolute; width: 100%; left: 0; top: 30px; color: #fff !important; text-align: center; font-style: normal; z-index: 2; }
+#content .showcase ul.qtnav li a img { display: block; margin: 0 20px 0 19px; }
+#content .showcase ul.qtnav li a:hover,
+#content .showcase ul.qtnav li a:hover *,
+#content .showcase ul.qtnav li a:focus { text-decoration: none; color: #333; background-position: 0 -97px; }
+#content .showcase ul.qtnav li a.active { cursor: default; outline: none; color: #525252; background-position: 0 -194px; }
+#content .showcase ul.qtnav li a.active img { opacity: .3; -moz-opacity: .3; filter: alpha(opacity=30); }
+#content .showcase ul.qtnav:after { content: '.'; display: block; height: 0; clear: both; visibility: hidden; }
+
+#content .showcase ul.qtnav .qtcontent { display: none; }
+
+#content ul.qtvertnav { margin-top: 4px; padding: 0 10px 0 0; }
+#content ul.qtvertnav li { border: none; margin: 0 0 3px; padding: 0; }
+#content ul.qtvertnav li.title p { padding-left: 6px; }
+#content ul.qtvertnav li a { display: block; position: relative; width: 186px; height: 86px; background: url(http://images.apple.com/mac/home/elements/qt_buttonbg20090608.jpg); }
+#content ul.qtvertnav li a:hover { background-position: 0 -86px; }
+#content ul.qtvertnav li strong, 
+#content ul.qtvertnav li span { font-weight: bold; font-size: 11px; line-height: 14px; position: absolute; left: 12px; }
+#content ul.qtvertnav li strong { width: 60px; top: 15px; }
+#content ul.qtvertnav li span { color: #b9b9b9; bottom: 18px; }
+#content ul.qtvertnav li a img { position: absolute; right: 15px; top: 16px; z-index: 1; }
+#content ul.qtvertnav li a em { position: absolute; top: 16px; right: 15px; z-index: 2; width: 80px; height: 52px; background: url(http://images.apple.com/mac/home/elements/qt_btn_blackout20090608.png) repeat; font-size: 10px; color: #fff !important; text-align: center; line-height: 55px; }
+
+
+#content ul.qtvertnav li a:hover strong { text-decoration: none; color: #000; }
+#content ul.qtvertnav li a:hover span { text-decoration: none; color: #b9b9b9; }
+#content ul.qtvertnav li.active a { background-position: 0 -172px; }
+
+#content .grid5col .column { margin-top: 20px; margin-bottom: 20px; border-right: 1px solid #ededed; height: 100px; }
+#content .grid5col .column.last { border-right: none; }
+
+/* footer
+------------------------*/
+#globalfooter { margin-top: 12px; }
+#globalfooter p.sosumi { float: right; width: 540px; margin: -4.4em 0 0; color: #888; line-height: 1.4em; text-align: right; }
