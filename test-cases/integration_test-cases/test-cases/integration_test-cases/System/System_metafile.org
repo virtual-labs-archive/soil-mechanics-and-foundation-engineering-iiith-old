@@ -1,9 +1,0 @@
-S.no		Test case link
-1. 	[[https://github.com/Virtual-Labs/soil-mechanics-and-foundation-engineering-iiith/blob/master/test-cases/integration_test-cases/System/Soil%20Mechanics_01_Usability_smk.org][Soil Mechanics_01_Usability_smk.org]]
-2. 	[[https://github.com/Virtual-Labs/soil-mechanics-and-foundation-engineering-iiith/blob/master/test-cases/integration_test-cases/System/Soil%20Mechanics_02_Introduction_smk.org][Soil Mechanics_02_Introduction_smk.org]]
-3. 	[[https://github.com/Virtual-Labs/soil-mechanics-and-foundation-engineering-iiith/blob/master/test-cases/integration_test-cases/System/Soil%20Mechanics_03_List%20of%20Experiments_smk.org][Soil Mechanics_03_List of Experiments_smk.org]]
-4. 	[[https://github.com/Virtual-Labs/soil-mechanics-and-foundation-engineering-iiith/blob/master/test-cases/integration_test-cases/System/Soil%20Mechanics_04_Target%20Audience_smk.org][Soil Mechanics_04_Target Audience_smk.org]]
-5. 	[[https://github.com/Virtual-Labs/soil-mechanics-and-foundation-engineering-iiith/blob/master/test-cases/integration_test-cases/System/Soil%20Mechanics_05_Courses%20Align_smk.org][Soil Mechanics_05_Courses Align_smk.org]]
-6. 	[[https://github.com/Virtual-Labs/soil-mechanics-and-foundation-engineering-iiith/blob/master/test-cases/integration_test-cases/System/Soil%20Mechanics_06_Prerequisite_smk.org][Soil Mechanics_06_Prerequisite_smk.org]]
-7. 	[[https://github.com/Virtual-Labs/soil-mechanics-and-foundation-engineering-iiith/blob/master/test-cases/integration_test-cases/System/Soil%20Mechanics_07_Feedback_smk.org][Soil Mechanics_07_Feedback_smk.org]]
-8. 	[[https://github.com/Virtual-Labs/soil-mechanics-and-foundation-engineering-iiith/blob/master/test-cases/integration_test-cases/System/Soil%20Mechanics_08_Feedback_p1.org][Soil Mechanics_08_Feedback_p1.org]]
