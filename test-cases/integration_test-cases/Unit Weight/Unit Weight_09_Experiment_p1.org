@@ -1,0 +1,32 @@
+* Author: Suman
+* Date Created: 07 Jan 2016
+* Environment
+  - OS: Windows 7, Linux
+  - Browsers: Firefox,Chrome
+  - Bandwidth : 100Mbps
+  - Hardware Configuration:8GBRAM , 
+  - Processor:i5
+
+* Objective
+  - To view the Experiment of the "Unit Weight" experiment
+
+* Pre conditions
+  - Refer to first test case [[https://github.com/Virtual-Labs/soil-mechanics-and-foundation-engineering-iiith/blob/master/test-cases/integration_test-cases/Unit Weight/Unit Weight_01_Usability_smk.org][Unit Weight_01_Usability_smk.org]]
+
+* Post conditions
+  - Nil
+* Test Steps
+  1. Click on the Experiment link 
+  2. It should re-direct to the Indroduction page
+  3. Click on the 'Go to Flash view on Unit Weight' link present in the page
+  4. Click on the 'start' button and then click on the 'play' button
+
+* Expected result
+  1. Experiment page should be opened
+  2. Content should be present with no distortions and Junk characters
+  3. It should redirect to a new tab with the selected link
+  4. The presentation about the unit weight experiment should start playing on then screen
+
+* Review/comments
+
+

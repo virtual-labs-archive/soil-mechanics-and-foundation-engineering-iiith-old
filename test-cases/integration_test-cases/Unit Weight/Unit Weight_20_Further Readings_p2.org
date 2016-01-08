@@ -1,0 +1,33 @@
+* Author: Suman
+* Date Created: 07 Jan 2016
+* Environment
+  - OS: Windows 7, Linux
+  - Browsers: Firefox,Chrome
+  - Bandwidth : 100Mbps
+  - Hardware Configuration:8GBRAM , 
+  - Processor:i5
+  - Links:
+  - 1.http://www.sciencedirect.com
+  - 2.http://home.iitk.ac.in/~madhav/
+
+* Objective
+  - To view the links in Further Readings page of "Unit Weight" experiment
+
+* Pre conditions
+  - Refer to first test case [[https://github.com/Virtual-Labs/soil-mechanics-and-foundation-engineering-iiith/blob/master/test-cases/integration_test-cases/Unit Weight/Unit Weight_01_Usability_smk.org][Unit Weight_01_Usability_smk.org]]
+
+* Post conditions
+  - Nil
+* Test Steps
+  1. Click on the Further Readings link 
+  2. It should re-direct to the Further Readings page
+  3. Click on the links displayed on the screen
+
+* Expected result
+  1. Further Readings page should be opened
+  2. Content should be present with no distortions and Junk characters
+  3. It should redirect to a new tab with the selected link
+
+* Review/comments
+
+
