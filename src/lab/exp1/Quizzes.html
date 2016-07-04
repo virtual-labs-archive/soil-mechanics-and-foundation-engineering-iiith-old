@@ -11,7 +11,7 @@
     <title>Welcome to Virtual Labs - A MHRD Govt of india Initiative</title>
     
      <link rel="shortcut icon" href="../images/favicon.ico">
-    
+    <script type="text/javascript" src = 'quiz.js'></script>
  
     <link href="../css/bootstrap.min.css" rel="stylesheet">
 
@@ -24,7 +24,38 @@
     <!-- Custom CSS -->
     <link href="../css/style.css" rel="stylesheet">
 	<script type="text/javascript" src = 'tabs.js'></script>
-<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-67558473-1', 'auto');ga('send', 'pageview');</script>	
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-67020197-1', 'auto');ga('send', 'pageview');</script>	
+
+
+<style>
+.qheader{
+font:bold 14px Arial;
+}
+
+.qselections{
+font:normal 13px Arial;
+}
+</style>
+
+<script src="quizconfig.js">
+</script>
+
+<script>
+
+/***********************************************
+* JavaScriptKit.com Multiple Choice Quiz Script (http://www.javascriptkit.com)
+* Copyright 2003 JavaScript Kit- http://www.javascriptkit.com
+* This notice and footnote must stay intact for use
+* Visit JavaScript Kit (http://www.javascriptkit.com/) for full source code
+***********************************************/
+
+var actualchoices=new Array()
+document.cookie="ready=yes"
+</script>
+
+
+
+
 </head>
 <body id="page-top" class="index">
 <div id="top">
@@ -46,26 +77,26 @@
 			            <!-- Collect the nav links, forms, and other content for toggling -->
 			            <div class="collapse navbar-collapse menu-div" id="bs-example-navbar-collapse-1" style="border: 0px;">
 			               
-				                <!-- <ul class="nav navbar-nav navbar-right menu-ul search-ul" style="position: relative; top: -5px;">
-				                	<li>
-				                		<form method="get" action="../search-result.html">
-				                        	<input type="text" class="search-textbox" placeholder="SEARCH FOR A LAB" name="q" id="q"/>
-				                        	<input type="submit" value="" class="search-button" />
-				                        </form>
-				                	</li>
-				                </ul> -->
+			                <ul class="nav navbar-nav navbar-right menu-ul search-ul" style="position: relative; top: -5px;">
+			                	<li>
+			                		<form method="get" action="../search-result.html">
+			                        	<input type="text" class="search-textbox" placeholder="SEARCH FOR A LAB" name="q" id="q"/>
+			                        	<input type="submit" value="" class="search-button" />
+			                        </form>
+			                	</li>
+			                </ul>
 			                
 			             <ul class="nav navbar-nav navbar-right menu-ul">
 			                    <li class="page-scroll menu-li " >
-			                        <a href="http://vlabs.ac.in/index.html" class="menu-a" >HOME</a>
+			                        <a href="http://vlabs.ac.in/" class="menu-a" >HOME</a>
 			                    </li>
 			                    <li class="page-scroll menu-li menu-li-active">
 			                        <a href="http://vlabs.ac.in/labs.html"  class="menu-a menu-a-active" >ALL LABS</a>
 			                    </li>
 			                    <li class="page-scroll menu-li " >
-			                        <a href="http://vlabs.ac.in/index.html#partner" class="menu-a" >PARTNERS</a>
+			                        <a href="http://vlabs.ac.in/#partner" class="menu-a" >PARTNERS</a>
 			                    </li><li class="page-scroll menu-li " >
-			                        <a href="http://vlabs.ac.in/index.html#contact" class="menu-a" >CONTACT</a>
+			                        <a href="http://vlabs.ac.in/#contact" class="menu-a" >CONTACT</a>
 			                    </li>
 			                </ul>
 			                
@@ -87,123 +118,200 @@
 			
 			
 			<!-- =================================================================================================================================== -->
-			<div class="container-fluid"  style="margin-left: 35px; margin-right: 35px;">
+		<div class="container-fluid"  style="margin-left: 35px; margin-right: 35px;">
 				<h2 class="text-h2-lightblue" style=" margin-bottom: 20px; margin-top: 10px; "><a href="http://vlabs.ac.in/civil-engineering-labs.html" class="sidebar-a" >Civil Engineering</a> &rarr;<a href="../Introduction.html" class="sidebar-a" >Soil Mechanics Lab</a>&nbsp&rarr;<a href="../List of experiments.html" class="sidebar-a" >List Of Experiments</a><br/></h2>
 					
 					<div class="row">
 						<div class="col-md-2 sidebar-col-2">
 						<!--edit1-->
-<a href="Introduction.html?domain=Civil Engineering&lab=Soil Mechanics Lab" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;">Introduction</h3></a><a href="Theory.html?domain=Civil Engineering&lab=Soil Mechanics Lab" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;">Theory</h3></a><a href="Objective.html?domain=Civil Engineering&lab=Soil Mechanics Lab" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;">Objective</h3></a><a href="Experiment.html?domain=Civil Engineering&lab=Soil Mechanics Lab" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;">Experiment</h3></a><a href="Manual.html?domain=Civil Engineering&lab=Soil Mechanics Lab" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;">Manual</h3></a><a href="Quizzes.html?domain=Civil Engineering&lab=Soil Mechanics Lab" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;">Quizzes</h3></a><a href="Procedure.html?domain=Civil Engineering&lab=Soil Mechanics Lab" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;">Procedure</h3></a><a href="Further Readings.html?domain=Civil Engineering&lab=Soil Mechanics Lab" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;">Further Readings</h3></a><a href="Feedback.html?domain=Civil Engineering&lab=Soil Mechanics Lab" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;">Feedback</h3></a>						</div>
+		<a href="Introduction.html?domain=Civil Engineering&lab=Soil Mechanics Lab" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;">Introduction</h3></a><a href="Theory.html?domain=Civil Engineering&lab=Soil Mechanics Lab" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;">Theory</h3></a><a href="Objective.html?domain=Civil Engineering&lab=Soil Mechanics Lab" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;">Objective</h3></a><a href="Experiment.html?domain=Civil Engineering&lab=Soil Mechanics Lab" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;">Experiment</h3></a><a href="Manual.html?domain=Civil Engineering&lab=Soil Mechanics Lab" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;">Manual</h3></a><a href="Quizzes.html?domain=Civil Engineering&lab=Soil Mechanics Lab" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;">Quizzes</h3></a><a href="Procedure.html?domain=Civil Engineering&lab=Soil Mechanics Lab" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;">Procedure</h3></a><a href="Further Readings.html?domain=Civil Engineering&lab=Soil Mechanics Lab" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;">Further Readings</h3></a><a href="Feedback.html?domain=Civil Engineering&lab=Soil Mechanics Lab" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;">Feedback</h3></a>						</div>
 						
-						<div class="col-md-10 lab-list-col-10">
+
+
+
+
+
+<div class="col-md-10 lab-list-col-10">
 							
 							<!--edit -->
-<h1 class="text-h2-lightblue">Water Content</h1><div class="content" id="experiment-article-section-6-content">
+<h1 class="text-h2-lightblue">Water Content </h1><div class="content" id="experiment-article-section-6-content">
 <p>
-<b>Q1.</b> 
-              Soil water content is expressed on what basis <br>
-<input id="q1" name="q1" type="radio" value="0"> 
-               Gravimetric  <br>
-<input id="q1" name="q1" type="radio" value="1">
-               volumetric<br>
-<input id="q1" name="q1" type="radio" value="2"> 
-               Both a and b <br>
-<input id="q1" name="q1" type="radio" value="3">
-               None <br/><br/>
-<b>Q2.</b> 
-              Water content affects  <br>
-<input id="q1" name="q1" type="radio" value="0"> 
-               Strength and settlement of soils<br>
-<input id="q1" name="q1" type="radio" value="1">
-               Sensitivity<br>
-<input id="q1" name="q1" type="radio" value="2"> 
-               Relative dendity<br>
-<input id="q1" name="q1" type="radio" value="3">
-               None<br/><br/> <b>Q3.</b> 
-              The water content of clays are generally ________ sand and silts <br>
-<input id="q1" name="q1" type="radio" value="0"> 
-               Greater than <br>
-<input id="q1" name="q1" type="radio" value="1">
-               Equal to<br>
-<input id="q1" name="q1" type="radio" value="2"> 
-               Less than<br>
-<input id="q1" name="q1" type="radio" value="3">
-               None<br/><br/> <b>Q4.</b> 
-              The standard method of determining water content is  <br>
-<input id="q1" name="q1" type="radio" value="0"> 
-               Oven-drying method<br>
-<input id="q1" name="q1" type="radio" value="1">
-               Calcium carbide method<br>
-<input id="q1" name="q1" type="radio" value="2"> 
-               Alcohol method<br>
-<input id="q1" name="q1" type="radio" value="3">
-               Pycnometer method <br/><br/> <b>Q5.</b> 
-              Water content for dry soil is equal to  <br>
-<input id="q1" name="q1" type="radio" value="0"> 
-               0<br>
-<input id="q1" name="q1" type="radio" value="1">
-               &lt;0 <br>
-<input id="q1" name="q1" type="radio" value="2"> 
-               &gt;0<br>
-<input id="q1" name="q1" type="radio" value="3">
-               &lt;=0<br/><br/> <b>Q6.</b> 
-              Pycnometer is used to determined  <br>
-<input id="q1" name="q1" type="radio" value="0"> 
-               Water content and void ratio <br>
-<input id="q1" name="q1" type="radio" value="1">
-               Specific gravity and dry density⁰⁰<br>
-<input id="q1" name="q1" type="radio" value="2"> 
-               Water content and specific gravity<br>
-<input id="q1" name="q1" type="radio" value="3">
-               Void ratio and dry density<br/><br/> <b>Q7.</b> 
-              The water content of soil is defined as the ratio of  <br>
-<input id="q1" name="q1" type="radio" value="0"> 
-               Volume of water to volume of given soil<br>
-<input id="q1" name="q1" type="radio" value="1">
-               Volume of water to volume of voids in soil<br>
-<input id="q1" name="q1" type="radio" value="2"> 
-               Weight of water to weight of air voids<br>
-<input id="q1" name="q1" type="radio" value="3">
-               Weight of water to weight of solids of given mass of soil<br/><br/>
-<b>Q8.</b>Water content of a soil sample is the difference of weight of given sample at the temperature and the weight determined after drying it for 24hrs at temperature ranging from ⁰c <br>
-<input id="q1" name="q1" type="radio" value="0"> 
-               80⁰ c to  90⁰c<br>
-<input id="q1" name="q1" type="radio" value="1">
-               90⁰c  to  95⁰c<br>
-<input id="q1" name="q1" type="radio" value="2"> 
-               95⁰c  to  100⁰c<br>
-<input id="q1" name="q1" type="radio" value="3">
-               105⁰c  to  110⁰c  <br/><br/> <b>Q9.</b> 
-              Water content for saturation soil is  <br>
-<input id="q1" name="q1" type="radio" value="0"> 
-               =0<br>
-<input id="q1" name="q1" type="radio" value="1">
-               &lt;0<br>
-<input id="q1" name="q1" type="radio" value="2"> 
-               &gt;0<br>
-<input id="q1" name="q1" type="radio" value="3">
-               &lt;=0<br/><br/> <b>Q10.</b> 
-              The ratio of the weight of given volume of soil solids to the weight of an equal of distilled water at the given temperature, is known  <br>
-<input id="q1" name="q1" type="radio" value="0"> 
-               Porosity<br>
-<input id="q1" name="q1" type="radio" value="1">
-               Specific gravity<br>
-<input id="q1" name="q1" type="radio" value="2"> 
-               Void ratio<br>
-<input id="q1" name="q1" type="radio" value="3">
-               Water content<br/><br/> <b>Q11.</b> 
-              Water content w in %  <br>
-<input id="q1" name="q1" type="radio" value="0"> 
-               W&lt;0<br>
-<input id="q1" name="q1" type="radio" value="1">
-               0<w>100<br>
-<input id="q1" name="q1" type="radio" value="2"> 
-               0≤ w ≥100<br>
-<input id="q1" name="q1" type="radio" value="3">
-               W≥100 <br/><br/>
-</input></br></input></br></w></input></br></input></br></input></br></input></br></input></br></input></br></input></br></input></br></input></br></input></br></input></br></input></br></input></br></input></br></input></br></input></br></input></br></input></br></input></br></input></br></input></br></input></br></input></br></input></br></input></br></input></br></input></br></input></br></input></br></input></br></input></br></input></br></input></br></input></br></input></br></input></br></input></br></input></br></input></br></input></br></input></br></input></br></p>
-<p>
-<a href="Exp-1 WaterContent.pdf" target="_blank">Read More</a>
+<!-- <form method="post" name="quiz" onsubmit='evaluate()' target="_blank">
+<ol>
+<li><b>1. The execution of a loop typically starts with: </b></li>
+<input name="Q1" type="radio" value="1">initialization statements<br>
+<input name="Q1" type="radio" value="2">Loop body<br>
+<input name="Q1" type="radio" value="3">test condition<br>
+<input name="Q1" type="radio" value="4">update statements<br>
+
+<br>
+<li><b>2. The break statement is used to exit from:</b> </li>
+<input name="Q2" type="radio" value="1">an if statement<br>
+<input name="Q2" type="radio" value="2">a for loop<br>
+<input name="Q2" type="radio" value="3">a program<br>
+<input name="Q2" type="radio" value="4">the main( ) function<br>
+<br>
+<li><b>3. A do-while loop is useful when we want that the statements within the loop must be executed</b></li>
+<input name="Q3" type="radio" value="1">Only once<br>
+<input name="Q3" type="radio" value="2">At Least Once<br>
+<input name="Q3" type="radio" value="3">More than once<br>
+
+<input name="Q3" type="radio" value="4">None of the above<br>
+<br>
+<li><b>4. In what sequence the initialization, testing and execution of body is done in a do-while loop </b></li>
+<input name="Q4" type="radio" value="1">Initialization, execution of body, testing<br>
+<input name="Q4" type="radio" value="2">Execution of body, initialization, testing <br>
+<input name="Q4" type="radio" value="3">Initialization, testing, execution of body <br>
+<input name="Q4" type="radio" value="4">None of the above<br>
+<br>
+<li><b>5. Which of the following is not an infinite loop. </b></li>
+<input name="Q5" type="radio" value="1"><code>int i = 1 ;          
+while ( 1 ) 
+{ 
+    i++ ; 
+}</code><br>
+<input name="Q5" type="radio" value="2">
+<code>for( int i =1; i &lt; 10 ; i--)   printf("Hello World");
+		</code><br>
+<input name="Q5" type="radio" value="3"><code>for(int i =1; i&lt;100; i++)
+printf("Hello World");
+		</code><br>
+<input name="Q5" type="radio" value="4">
+<code>int i = 0; 
+do{
+i--
+printf("%d ",i);
+}while(i&gt;0);
+</code>
+</ol>
+<br>
+</br></input></br></input></br></input></br></input></br></br></input></br></input></br></input></br></input></br></br></input></br></input></br></input></br></input></br></br></input></br></input></br></input></br></input></br></br></input></br></input></br></input></br></input></ol>
+<br>
+<p> <button type="submit" onclick="evaluate()">Submit answers for evaluation</button></p>
+</br></form> -->
+
+
+
+<form method="POST" name="myquiz">
+
+<!-- <font face="Arial"><big><big>General Knowledge Quiz</big></big></font></p> -->
+
+<div class="qheader">
+1. Does specific gravity of a material has any unit? if yes, what is it?   </div>
+<div class="qselections">
+<input type="radio" value="a" name="question1">a) True <br>
+<input type="radio" value="b" name="question1">b) False<br>
+
+</div>
+
+<br>
+
+<div class="qheader">
+2) Water content affects</div>
+<div class="qselections">
+<input type="radio" value="a" name="question2">a) Strength and settlement of soils<br>
+<input type="radio" value="b" name="question2">b) Sensitivity<br>
+<input type="radio" value="c" name="question2">c) Relative dendity<br>
+<input type="radio" value="d" name="question2">d) None<br>
+</div>
+
+<br>
+
+<div class="qheader">
+3)  The water content of clays are generally ________ sand and silts </div>
+<div class="qselections">
+<input type="radio" value="a" name="question3">a) Greater than <br>
+<input type="radio" value="b" name="question3">b) Equal to<br>
+<input type="radio" value="c" name="question3">c) Less than<br>
+<input type="radio" value="d" name="question3">d) None<br>
+</div>
+
+<br>
+
+<div class="qheader">
+4) The standard method of determining water content is </div>
+<div class="qselections">
+<input type="radio" value="a" name="question4">a) Oven-drying method<br>
+<input type="radio" value="b" name="question4">b) Calcium carbide method<br>
+<input type="radio" value="c" name="question4">c) Alcohol method<br>
+<input type="radio" value="d" name="question4">d) Pycnometer method <br>
+</div>
+
+<br>
+
+<div class="qheader">
+5) Water content for dry soil is equal to</div>
+<div class="qselections">
+<input type="radio" value="a" name="question5">a) <code>0 </code><br>
+<input type="radio" value="b" name="question5">b) <code> "<0" </code> <br>
+<input type="radio" value="c" name="question5">c) <code> ">0" </code> <br>
+<input type="radio" value="d" name="question5">d) <code> "<=0" </code> <br>
+</div>
+
+<br>
+
+<div class="qheader">
+6) Pycnometer is used to determined</div>
+<div class="qselections">
+<input type="radio" value="a" name="question6">a) Water content and void ratio<br>
+<input type="radio" value="b" name="question6">b) Specific gravity and dry density<br>
+<input type="radio" value="c" name="question6">c) Water content and specific gravity<br>
+<input type="radio" value="d" name="question6">d) Void ratio and dry density<br>
+</div>
+
+<br>
+
+<div class="qheader">
+7)  The water content of soil is defined as the ratio of</div>
+<div class="qselections">
+<input type="radio" value="a" name="question7">a) Volume of water to volume of given soil<br>
+<input type="radio" value="b" name="question7">b) Volume of water to volume of voids in soil<br>
+<input type="radio" value="c" name="question7">c) Weight of water to weight of air voids<br>
+<input type="radio" value="d" name="question7">d)  Weight of water to weight of solids of given mass of soil<br>
+</div>
+
+<br>
+
+<div class="qheader">
+8) Water content of a soil sample is the difference of weight of given sample at the temperature and the weight determined after drying it for 24hrs at temperature ranging from ⁰c  </div>
+<div class="qselections">
+<input type="radio" value="a" name="question8">a) 80⁰ c to 90⁰c <br>
+<input type="radio" value="b" name="question8">b) 90⁰c to 95⁰c <br>
+<input type="radio" value="c" name="question8">c) 95⁰c to 100⁰c<br>
+<input type="radio" value="d" name="question8">d) 105⁰c to 110⁰c <br>
+</div>
+
+<br>
+
+<div class="qheader">
+9)  Water content for saturation soil is </div>
+<div class="qselections">
+<input type="radio" value="a" name="question9">a) <code> =0 </code><br>
+<input type="radio" value="b" name="question9">b) <code> "<0" </code><br>
+<input type="radio" value="c" name="question9">c) <code> ">0" </code> <br>
+<input type="radio" value="d" name="question9">d) <code>"<=0" </code> <br>
+</div>
+
+<br>
+
+<div class="qheader">
+10) The ratio of the weight of given volume of soil solids to the weight of an equal of distilled water at the given temperature, is known</div>
+<div class="qselections">
+<input type="radio" value="a" name="question10">a)  Porosity<br>
+<input type="radio" value="b" name="question10">b) Specific gravity<br>
+<input type="radio" value="c" name="question10">c) Void ratio<br>
+<input type="radio" value="d" name="question10">d)  Water content<br>
+
+</div>
+
+
+</form>
+
+<form>
+<div align="center">
+<input type="button" value="Grade Me!" name="B1" onClick="gradeit()"> <input type="button" value="Reset" name="B2" onClick="document.myquiz.reset()"></div>
+</form>
+
 </p>
 </div>						</div>
 					</div>
@@ -215,62 +323,52 @@
 			
 	</div> <!-- content div -->
 		
-<footer>
-		<div class="container-fluid footer-div" style="background: #404040; margin-top: 40px;  padding: 20px;">
+	<footer>
+		<div class="container-fluid footer-div" style="background: #404040; margin-top: 80px;  padding: 20px;">
 			<div class="col-md-4 border-right-green-dotted" >
 				<h2 class="text-h2-lightblue-small" style="font-weight: bold;margin-top: 0px;">Updates</h2>
-				<a href="http://community.virtual-labs.ac.in/w/index.php/Download" class="text-normal-gray-small nounderline" style="color: white" > Lab Integration Kit Releases</a>
-				<a href="http://community.virtual-labs.ac.in/w/index.php/First_Integration_workshop"
-				class="text-normal-gray-small nounderline"
-				style="color: white" >First Integration Workshop at IIIT Hyderabad</a>
-				<a href="http://community.virtual-labs.ac.in/w/index.php/Summer_Sprint_Integration_workshop" class="text-normal-gray-small nounderline" style="color: white" > Summer Integration Workshop at IIT Guwahati</a>
-				<a href="http://community.virtual-labs.ac.in/w/index.php/QA/Integration_workshop"
-				class="text-normal-gray-small nounderline"
-				style="color: white" > QA Integration
-				Workshop at IIIT Hyderabad</a>
-				<a href="http://community.virtual-labs.ac.in/w/index.php/A_new_set_of_25_Virtual_Labs_on_Portable_Media" class="text-normal-gray-small nounderline" style="color: white" > A new set of 25 Virtual Labs on Portable Media</a>
+				<a href="http://vlead.vlabs.ac.in/2015/07/19/lab-integration-kit-1-0-0-released/" class="text-normal-gray-small nounderline" style="color: white" > Lab Integration Kit 1.0.0 Released</a>
+				<a href="http://vlead.vlabs.ac.in/2015/07/15/summer-sprint-integration-workshop-at-iit-guwahati/" class="text-normal-gray-small nounderline" style="color: white" > Summer Sprint Integration Workshop at IIT Guwahati</a>
+				<a href="http://vlead.vlabs.ac.in/2014/12/16/a-new-set-of-35-virtual-labs-on-portable-media/" class="text-normal-gray-small nounderline" style="color: white" > A new set of 35 Virtual Labs on Portable Media</a>
+			
 			</div>
-
+			
 			<div class="col-md-2 border-right-green-dotted" >
 <!-- 				<h2 class="text-h2-lightblue-small" style="font-weight: bold;margin-top: 0px;">Nodal Centers</h2>
 				<div><a href="#" class="text-a-lightgreen" style="text-decoration: underline;" > REGISTRATION</a></div>
 				<div><a href="#" class="text-a-lightgreen" style="text-decoration: underline;" > LOGIN</a></div> -->
 				<!-- <div><a href="#" class="text-a-lightgreen" style="text-decoration: underline;" > Outreach Portal</a></div> -->
-				<a href="http://community.virtual-labs.ac.in/w/index.php/Main_Page" class="text-a-lightgreen" style="text-decoration: underline;" >Community</a>
+				<a href="http://vlead.virtual-labs.ac.in/" class="text-a-lightgreen" style="text-decoration: underline;" > Blog</a>
 				<a href="http://www.sakshat.ac.in/" class="text-a-lightgreen" style="text-decoration: underline;" > Sakshat Portal</a>
-				<!--<a href="http://118.102.191.38/feedback/Registration.html" class="text-a-lightgreen" style="text-decoration: underline;" > Nodal Center</a>-->
+				<a href="http://118.102.191.38/feedback/Registration.html" class="text-a-lightgreen" style="text-decoration: underline;" > Nodal Center</a>
 				<a href="http://outreach.vlabs.ac.in/" class="text-a-lightgreen" style="text-decoration: underline;" > Outreach Portal</a>
-				<a href="./faq.html" class="text-a-lightgreen" style="text-decoration: underline;" > FAQ</a>
-	                </div>
-
-			<div class="col-md-3 border-right-green-dotted" id="contact" >
+			
+			</div>
+			
+			<div class="col-md-3 border-right-green-dotted" >
 <!-- 				<div><a href="#" class="text-a-lightgreen" style="text-decoration: underline;" > FAQ</a></div>
 				<div><a href="#" class="text-a-lightgreen" style="text-decoration: underline;" > FEEDBACK</a></div>
 				<div><a href="#" class="text-a-lightgreen" style="text-decoration: underline;" > SAKSHAT PORTAL</a></div> -->
 				<h2 class="text-h2-lightblue-small" style="font-weight: bold;margin-top: 0px;"> Contact us</h2>
 				<a href="http://feedback.vlabs.ac.in/" class="text-a-lightgreen" style="text-decoration: underline;" > Feedback</a>
-				<a class="text-a-lightgreen"style="text-decoration: underline;" href="mailto:support@vlabs.ac.in">support@vlabs.ac.in</a>
+				<a class="text-a-lightgreen" style="text-decoration: underline;" href="mailto:support@vlabs.ac.in">support@vlabs.ac.in</a>
+			
 			</div>
-
+			
 			<div class="col-md-2 border-right-green-dotted" >
 				<h2 class="text-h2-lightblue-small" style="font-weight: bold;margin-top: 0px;"> Follow us</h2>
 				<a href="https://www.facebook.com/pages/Virtual-Labs-IIT-Delhi/301510159983871" class="text-a-lightgreen nounderline"   target="_blank"> <img src="../images/social/fb.png"  style="border-radius: 50%;"/> </a>
 				<a href="https://twitter.com/TheVirtualLabs" class="text-a-lightgreen nounderline"   target="_blank"> <img src="../images/social/twitter.png"  style="border-radius: 50%;"/></a>
-				<a href="http://linkedin.com" class="text-a-lightgreen nounderline"  target="_blank" > <img src="../images/social/linkedin.png" style="border-radius: 50%;" /></a>
-				<a href="https://www.youtube.com/watch?v=mVBYNXLaDdg"
-				class="text-a-lightgreen nounderline"
-				target="_blank" >
-				<img src="../images/social/youtube.png"
-				style="border-radius: 50%; width: 38px;
-				height: 38px" /></a>
-
+				
 			</div>
-
+			
  		</div>
-</footer>
+	</footer>
 
 
 </div> <!-- top div -->
+
+
 
 </body>
 

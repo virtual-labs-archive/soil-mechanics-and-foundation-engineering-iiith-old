@@ -11,7 +11,7 @@
     <title>Welcome to Virtual Labs - A MHRD Govt of india Initiative</title>
     
      <link rel="shortcut icon" href="../images/favicon.ico">
-    
+    <script type="text/javascript" src = 'quiz.js'></script>
  
     <link href="../css/bootstrap.min.css" rel="stylesheet">
 
@@ -24,7 +24,38 @@
     <!-- Custom CSS -->
     <link href="../css/style.css" rel="stylesheet">
 	<script type="text/javascript" src = 'tabs.js'></script>
-<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-67558473-1', 'auto');ga('send', 'pageview');</script>	
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-67020197-1', 'auto');ga('send', 'pageview');</script>	
+
+
+<style>
+.qheader{
+font:bold 14px Arial;
+}
+
+.qselections{
+font:normal 13px Arial;
+}
+</style>
+
+<script src="quizconfig.js">
+</script>
+
+<script>
+
+/***********************************************
+* JavaScriptKit.com Multiple Choice Quiz Script (http://www.javascriptkit.com)
+* Copyright 2003 JavaScript Kit- http://www.javascriptkit.com
+* This notice and footnote must stay intact for use
+* Visit JavaScript Kit (http://www.javascriptkit.com/) for full source code
+***********************************************/
+
+var actualchoices=new Array()
+document.cookie="ready=yes"
+</script>
+
+
+
+
 </head>
 <body id="page-top" class="index">
 <div id="top">
@@ -46,26 +77,26 @@
 			            <!-- Collect the nav links, forms, and other content for toggling -->
 			            <div class="collapse navbar-collapse menu-div" id="bs-example-navbar-collapse-1" style="border: 0px;">
 			               
-			               <!--  <ul class="nav navbar-nav navbar-right menu-ul search-ul" style="position: relative; top: -5px;">
+			                <ul class="nav navbar-nav navbar-right menu-ul search-ul" style="position: relative; top: -5px;">
 			                	<li>
 			                		<form method="get" action="../search-result.html">
 			                        	<input type="text" class="search-textbox" placeholder="SEARCH FOR A LAB" name="q" id="q"/>
 			                        	<input type="submit" value="" class="search-button" />
 			                        </form>
 			                	</li>
-			                </ul> -->
+			                </ul>
 			                
 			             <ul class="nav navbar-nav navbar-right menu-ul">
 			                    <li class="page-scroll menu-li " >
-			                        <a href="http://vlabs.ac.in/index.html" class="menu-a" >HOME</a>
+			                        <a href="http://vlabs.ac.in/" class="menu-a" >HOME</a>
 			                    </li>
 			                    <li class="page-scroll menu-li menu-li-active">
 			                        <a href="http://vlabs.ac.in/labs.html"  class="menu-a menu-a-active" >ALL LABS</a>
 			                    </li>
 			                    <li class="page-scroll menu-li " >
-			                        <a href="http://vlabs.ac.in/index.html#partner" class="menu-a" >PARTNERS</a>
+			                        <a href="http://vlabs.ac.in/#partner" class="menu-a" >PARTNERS</a>
 			                    </li><li class="page-scroll menu-li " >
-			                        <a href="http://vlabs.ac.in/index.html#contact" class="menu-a" >CONTACT</a>
+			                        <a href="http://vlabs.ac.in/#contact" class="menu-a" >CONTACT</a>
 			                    </li>
 			                </ul>
 			                
@@ -87,87 +118,168 @@
 			
 			
 			<!-- =================================================================================================================================== -->
-			<div class="container-fluid"  style="margin-left: 35px; margin-right: 35px;">
+		<div class="container-fluid"  style="margin-left: 35px; margin-right: 35px;">
 				<h2 class="text-h2-lightblue" style=" margin-bottom: 20px; margin-top: 10px; "><a href="http://vlabs.ac.in/civil-engineering-labs.html" class="sidebar-a" >Civil Engineering</a> &rarr;<a href="../Introduction.html" class="sidebar-a" >Soil Mechanics Lab</a>&nbsp&rarr;<a href="../List of experiments.html" class="sidebar-a" >List Of Experiments</a><br/></h2>
 					
 					<div class="row">
 						<div class="col-md-2 sidebar-col-2">
 						<!--edit1-->
-<a href="Introduction.html?domain=Civil Engineering&lab=Soil Mechanics Lab" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;">Introduction</h3></a><a href="Theory.html?domain=Civil Engineering&lab=Soil Mechanics Lab" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;">Theory</h3></a><a href="Objective.html?domain=Civil Engineering&lab=Soil Mechanics Lab" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;">Objective</h3></a><a href="Experiment.html?domain=Civil Engineering&lab=Soil Mechanics Lab" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;">Experiment</h3></a><a href="Manual.html?domain=Civil Engineering&lab=Soil Mechanics Lab" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;">Manual</h3></a><a href="Quizzes.html?domain=Civil Engineering&lab=Soil Mechanics Lab" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;">Quizzes</h3></a><a href="Procedure.html?domain=Civil Engineering&lab=Soil Mechanics Lab" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;">Procedure</h3></a><a href="Further Readings.html?domain=Civil Engineering&lab=Soil Mechanics Lab" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;">Further Readings</h3></a><a href="Feedback.html?domain=Civil Engineering&lab=Soil Mechanics Lab" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;">Feedback</h3></a>						</div>
+		<a href="Introduction.html?domain=Civil Engineering&lab=Soil Mechanics Lab" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;">Introduction</h3></a><a href="Theory.html?domain=Civil Engineering&lab=Soil Mechanics Lab" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;">Theory</h3></a><a href="Objective.html?domain=Civil Engineering&lab=Soil Mechanics Lab" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;">Objective</h3></a><a href="Experiment.html?domain=Civil Engineering&lab=Soil Mechanics Lab" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;">Experiment</h3></a><a href="Manual.html?domain=Civil Engineering&lab=Soil Mechanics Lab" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;">Manual</h3></a><a href="Quizzes.html?domain=Civil Engineering&lab=Soil Mechanics Lab" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;">Quizzes</h3></a><a href="Procedure.html?domain=Civil Engineering&lab=Soil Mechanics Lab" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;">Procedure</h3></a><a href="Further Readings.html?domain=Civil Engineering&lab=Soil Mechanics Lab" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;">Further Readings</h3></a><a href="Feedback.html?domain=Civil Engineering&lab=Soil Mechanics Lab" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;">Feedback</h3></a>						</div>
 						
-						<div class="col-md-10 lab-list-col-10">
+
+
+
+
+
+<div class="col-md-10 lab-list-col-10">
 							
 							<!--edit -->
-<h1 class="text-h2-lightblue">Unit Weight</h1><div class="content" id="experiment-article-section-6-content">
+<h1 class="text-h2-lightblue">Unit Weight </h1><div class="content" id="experiment-article-section-6-content">
 <p>
-<b>Q1.</b> 
-              Dry density of soil can be defined as the ratio of   <br>
-<input id="q1" name="q1" type="radio" value="0"> 
-               Weight of solids to total volume <br>
-<input id="q1" name="q1" type="radio" value="1">
-               Weight of soil to the total volume of solids<br>
-<input id="q1" name="q1" type="radio" value="2"> 
-               Unit weight  of the soil to the unit weight of water<br>
-<input id="q1" name="q1" type="radio" value="3">
-               None <br/><br/>
-<b>Q2.</b> 
-              The bulk density of coarse grained soils can be determined by  <br>
-<input id="q1" name="q1" type="radio" value="0"> 
-               Sand replacement method <br>
-<input id="q1" name="q1" type="radio" value="1">
-               Core cutter method<br>
-<input id="q1" name="q1" type="radio" value="2"> 
-               Pycnometer method<br>
-<input id="q1" name="q1" type="radio" value="3">
-               Torsion balance method <br/><br/> <b>Q3.</b> 
-              The bulk density of clays can be determined by <br>
-<input id="q1" name="q1" type="radio" value="0"> 
-               Core cutter method <br>
-<input id="q1" name="q1" type="radio" value="1">
-               Pycnometer method<br>
-<input id="q1" name="q1" type="radio" value="2"> 
-               Torsion balance method<br>
-<input id="q1" name="q1" type="radio" value="3">
-               Sand replacement method<br/><br/> <b>Q4.</b> 
-              Unit weight of solids depends on <br>
-<input id="q1" name="q1" type="radio" value="0"> 
-               Compaction<br>
-<input id="q1" name="q1" type="radio" value="1">
-               Consolidation<br>
-<input id="q1" name="q1" type="radio" value="2"> 
-               Specific gravity<br>
-<input id="q1" name="q1" type="radio" value="3">
-               Void ratio <br/><br/> <b>Q5.</b> 
-              Bulk density, saturation density and dry density of soil varies upon  <br>
-<input id="q1" name="q1" type="radio" value="0"> 
-               Degree of compaction<br>
-<input id="q1" name="q1" type="radio" value="1">
-               Degree of consolidation<br>
-<input id="q1" name="q1" type="radio" value="2"> 
-               Water content<br>
-<input id="q1" name="q1" type="radio" value="3">
-               Porosity<br/><br/> <b>Q6.</b> 
-              Different soils have different unit weights  <br>
-<input id="q1" name="q1" type="radio" value="0"> 
-               True <br>
-<input id="q1" name="q1" type="radio" value="1">
-               False<br>
-<input id="q1" name="q1" type="radio" value="2"> 
-               Cannot be answered<br>
-<input id="q1" name="q1" type="radio" value="3">
-               Could not be answered<br/><br/> <b>Q7.</b> 
-              Select the correct one   <br>
-<input id="q1" name="q1" type="radio" value="0"> 
-               Unit weight of dry soil is greater than unit weight of wet soil <br>
-<input id="q1" name="q1" type="radio" value="1">
-               For dry soils, dry unit weight is less than total unit weight<br>
-<input id="q1" name="q1" type="radio" value="2"> 
-               Unit weight of soil increases due to submergence in water<br>
-<input id="q1" name="q1" type="radio" value="3">
-               Unit weight of soil decreases due to submergence in water <br/><br/>
-</input></br></input></br></input></br></input></br></input></br></input></br></input></br></input></br></input></br></input></br></input></br></input></br></input></br></input></br></input></br></input></br></input></br></input></br></input></br></input></br></input></br></input></br></input></br></input></br></input></br></input></br></input></br></input></br></p>
-<p>
-<a href="Exp-2 UnitWeight.pdf" target="_blank">Read More</a>
+<!-- <form method="post" name="quiz" onsubmit='evaluate()' target="_blank">
+<ol>
+<li><b>1. The execution of a loop typically starts with: </b></li>
+<input name="Q1" type="radio" value="1">initialization statements<br>
+<input name="Q1" type="radio" value="2">Loop body<br>
+<input name="Q1" type="radio" value="3">test condition<br>
+<input name="Q1" type="radio" value="4">update statements<br>
+
+<br>
+<li><b>2. The break statement is used to exit from:</b> </li>
+<input name="Q2" type="radio" value="1">an if statement<br>
+<input name="Q2" type="radio" value="2">a for loop<br>
+<input name="Q2" type="radio" value="3">a program<br>
+<input name="Q2" type="radio" value="4">the main( ) function<br>
+<br>
+<li><b>3. A do-while loop is useful when we want that the statements within the loop must be executed</b></li>
+<input name="Q3" type="radio" value="1">Only once<br>
+<input name="Q3" type="radio" value="2">At Least Once<br>
+<input name="Q3" type="radio" value="3">More than once<br>
+
+<input name="Q3" type="radio" value="4">None of the above<br>
+<br>
+<li><b>4. In what sequence the initialization, testing and execution of body is done in a do-while loop </b></li>
+<input name="Q4" type="radio" value="1">Initialization, execution of body, testing<br>
+<input name="Q4" type="radio" value="2">Execution of body, initialization, testing <br>
+<input name="Q4" type="radio" value="3">Initialization, testing, execution of body <br>
+<input name="Q4" type="radio" value="4">None of the above<br>
+<br>
+<li><b>5. Which of the following is not an infinite loop. </b></li>
+<input name="Q5" type="radio" value="1"><code>int i = 1 ;          
+while ( 1 ) 
+{ 
+    i++ ; 
+}</code><br>
+<input name="Q5" type="radio" value="2">
+<code>for( int i =1; i &lt; 10 ; i--)   printf("Hello World");
+		</code><br>
+<input name="Q5" type="radio" value="3"><code>for(int i =1; i&lt;100; i++)
+printf("Hello World");
+		</code><br>
+<input name="Q5" type="radio" value="4">
+<code>int i = 0; 
+do{
+i--
+printf("%d ",i);
+}while(i&gt;0);
+</code>
+</ol>
+<br>
+</br></input></br></input></br></input></br></input></br></br></input></br></input></br></input></br></input></br></br></input></br></input></br></input></br></input></br></br></input></br></input></br></input></br></input></br></br></input></br></input></br></input></br></input></ol>
+<br>
+<p> <button type="submit" onclick="evaluate()">Submit answers for evaluation</button></p>
+</br></form> -->
+
+
+
+<form method="POST" name="myquiz">
+
+<!-- <font face="Arial"><big><big>General Knowledge Quiz</big></big></font></p> -->
+
+<div class="qheader">
+1. Dry density of soil can be defined as the ratio of   </div>
+<div class="qselections">
+<input type="radio" value="a" name="question1">a) Weight of solids to total volume <br>
+<input type="radio" value="b" name="question1">b) Weight of soil to the total volume of solids<br>
+<input type="radio" value="c" name="question1">c) Unit weight of the soil to the unit weight of water <br>
+<input type="radio" value="d" name="question1">d) None <br>
+</div>
+
+<br>
+
+<div class="qheader">
+2)  The bulk density of coarse grained soils can be determined by </div>
+<div class="qselections">
+<input type="radio" value="a" name="question2">a) Sand replacement method<br>
+<input type="radio" value="b" name="question2">b) Core cutter method<br>
+<input type="radio" value="c" name="question2">c) Pycnometer method<br>
+<input type="radio" value="d" name="question2">d) Torsion balance method <br>
+</div>
+
+<br>
+
+<div class="qheader">
+3) The bulk density of clays can be determined by  </div>
+<div class="qselections">
+<input type="radio" value="a" name="question3">a) Core cutter method <br>
+<input type="radio" value="b" name="question3">b) Pycnometer method<br>
+<input type="radio" value="c" name="question3">c) Torsion balance method<br>
+<input type="radio" value="d" name="question3">d) Sand replacement method<br>
+</div>
+
+<br>
+
+<div class="qheader">
+4) Unit weight of solids depends on  </div>
+<div class="qselections">
+<input type="radio" value="a" name="question4">a)  Compaction<br>
+<input type="radio" value="b" name="question4">b)  Consolidation<br>
+<input type="radio" value="c" name="question4">c)  Specific gravity<br>
+<input type="radio" value="d" name="question4">d)  Void ratio <br>
+</div>
+
+<br>
+
+<div class="qheader">
+5)  Bulk density, saturation density and dry density of soil varies upon </div>
+<div class="qselections">
+<input type="radio" value="a" name="question5">a) Degree of compaction<br>
+<input type="radio" value="b" name="question5">b) Degree of consolidation <br>
+<input type="radio" value="c" name="question5">c) Water content<br>
+<input type="radio" value="d" name="question5">d) Porosity </code> <br>
+</div>
+
+<br>
+
+<div class="qheader">
+6)  Different soils have different unit weights </div>
+<div class="qselections">
+<input type="radio" value="a" name="question6">a) True<br>
+<input type="radio" value="b" name="question6">b) False<br>
+<input type="radio" value="c" name="question6">c) Cannot be answered<br>
+<input type="radio" value="d" name="question6">d) Could not be answered<br>
+</div>
+
+<br>
+
+<div class="qheader">
+7)   Select the correct one </div>
+<div class="qselections">
+<input type="radio" value="a" name="question7">a) Unit weight of dry soil is greater than unit weight of wet soil<br>
+<input type="radio" value="b" name="question7">b) For dry soils, dry unit weight is less than total unit weight<br>
+<input type="radio" value="c" name="question7">c) Unit weight of soil increases due to submergence in water<br>
+<input type="radio" value="d" name="question7">d) Unit weight of soil decreases due to submergence in water <br>
+</div>
+
+
+
+</form>
+
+<form>
+<div align="center">
+<input type="button" value="Grade Me!" name="B1" onClick="gradeit()"> <input type="button" value="Reset" name="B2" onClick="document.myquiz.reset()"></div>
+</form>
+
 </p>
 </div>						</div>
 					</div>
@@ -180,61 +292,51 @@
 	</div> <!-- content div -->
 		
 	<footer>
-		<div class="container-fluid footer-div" style="background: #404040; margin-top: 40px;  padding: 20px;">
+		<div class="container-fluid footer-div" style="background: #404040; margin-top: 80px;  padding: 20px;">
 			<div class="col-md-4 border-right-green-dotted" >
 				<h2 class="text-h2-lightblue-small" style="font-weight: bold;margin-top: 0px;">Updates</h2>
-				<a href="http://community.virtual-labs.ac.in/w/index.php/Download" class="text-normal-gray-small nounderline" style="color: white" > Lab Integration Kit Releases</a>
-				<a href="http://community.virtual-labs.ac.in/w/index.php/First_Integration_workshop"
-				class="text-normal-gray-small nounderline"
-				style="color: white" >First Integration Workshop at IIIT Hyderabad</a>
-				<a href="http://community.virtual-labs.ac.in/w/index.php/Summer_Sprint_Integration_workshop" class="text-normal-gray-small nounderline" style="color: white" > Summer Integration Workshop at IIT Guwahati</a>
-				<a href="http://community.virtual-labs.ac.in/w/index.php/QA/Integration_workshop"
-				class="text-normal-gray-small nounderline"
-				style="color: white" > QA Integration
-				Workshop at IIIT Hyderabad</a>
-				<a href="http://community.virtual-labs.ac.in/w/index.php/A_new_set_of_25_Virtual_Labs_on_Portable_Media" class="text-normal-gray-small nounderline" style="color: white" > A new set of 25 Virtual Labs on Portable Media</a>
+				<a href="http://vlead.vlabs.ac.in/2015/07/19/lab-integration-kit-1-0-0-released/" class="text-normal-gray-small nounderline" style="color: white" > Lab Integration Kit 1.0.0 Released</a>
+				<a href="http://vlead.vlabs.ac.in/2015/07/15/summer-sprint-integration-workshop-at-iit-guwahati/" class="text-normal-gray-small nounderline" style="color: white" > Summer Sprint Integration Workshop at IIT Guwahati</a>
+				<a href="http://vlead.vlabs.ac.in/2014/12/16/a-new-set-of-35-virtual-labs-on-portable-media/" class="text-normal-gray-small nounderline" style="color: white" > A new set of 35 Virtual Labs on Portable Media</a>
+			
 			</div>
-
+			
 			<div class="col-md-2 border-right-green-dotted" >
 <!-- 				<h2 class="text-h2-lightblue-small" style="font-weight: bold;margin-top: 0px;">Nodal Centers</h2>
 				<div><a href="#" class="text-a-lightgreen" style="text-decoration: underline;" > REGISTRATION</a></div>
 				<div><a href="#" class="text-a-lightgreen" style="text-decoration: underline;" > LOGIN</a></div> -->
 				<!-- <div><a href="#" class="text-a-lightgreen" style="text-decoration: underline;" > Outreach Portal</a></div> -->
-				<a href="http://community.virtual-labs.ac.in/w/index.php/Main_Page" class="text-a-lightgreen" style="text-decoration: underline;" >Community</a>
+				<a href="http://vlead.virtual-labs.ac.in/" class="text-a-lightgreen" style="text-decoration: underline;" > Blog</a>
 				<a href="http://www.sakshat.ac.in/" class="text-a-lightgreen" style="text-decoration: underline;" > Sakshat Portal</a>
-				<!--<a href="http://118.102.191.38/feedback/Registration.html" class="text-a-lightgreen" style="text-decoration: underline;" > Nodal Center</a>-->
+				<a href="http://118.102.191.38/feedback/Registration.html" class="text-a-lightgreen" style="text-decoration: underline;" > Nodal Center</a>
 				<a href="http://outreach.vlabs.ac.in/" class="text-a-lightgreen" style="text-decoration: underline;" > Outreach Portal</a>
-				<a href="./faq.html" class="text-a-lightgreen" style="text-decoration: underline;" > FAQ</a>
-	                </div>
-
-			<div class="col-md-3 border-right-green-dotted" id="contact" >
+			
+			</div>
+			
+			<div class="col-md-3 border-right-green-dotted" >
 <!-- 				<div><a href="#" class="text-a-lightgreen" style="text-decoration: underline;" > FAQ</a></div>
 				<div><a href="#" class="text-a-lightgreen" style="text-decoration: underline;" > FEEDBACK</a></div>
 				<div><a href="#" class="text-a-lightgreen" style="text-decoration: underline;" > SAKSHAT PORTAL</a></div> -->
 				<h2 class="text-h2-lightblue-small" style="font-weight: bold;margin-top: 0px;"> Contact us</h2>
 				<a href="http://feedback.vlabs.ac.in/" class="text-a-lightgreen" style="text-decoration: underline;" > Feedback</a>
-				<a class="text-a-lightgreen"style="text-decoration: underline;" href="mailto:support@vlabs.ac.in">support@vlabs.ac.in</a>
+				<a class="text-a-lightgreen" style="text-decoration: underline;" href="mailto:support@vlabs.ac.in">support@vlabs.ac.in</a>
+			
 			</div>
-
+			
 			<div class="col-md-2 border-right-green-dotted" >
 				<h2 class="text-h2-lightblue-small" style="font-weight: bold;margin-top: 0px;"> Follow us</h2>
 				<a href="https://www.facebook.com/pages/Virtual-Labs-IIT-Delhi/301510159983871" class="text-a-lightgreen nounderline"   target="_blank"> <img src="../images/social/fb.png"  style="border-radius: 50%;"/> </a>
 				<a href="https://twitter.com/TheVirtualLabs" class="text-a-lightgreen nounderline"   target="_blank"> <img src="../images/social/twitter.png"  style="border-radius: 50%;"/></a>
-				<a href="http://linkedin.com" class="text-a-lightgreen nounderline"  target="_blank" > <img src="../images/social/linkedin.png" style="border-radius: 50%;" /></a>
-				<a href="https://www.youtube.com/watch?v=mVBYNXLaDdg"
-				class="text-a-lightgreen nounderline"
-				target="_blank" >
-				<img src="../images/social/youtube.png"
-				style="border-radius: 50%; width: 38px;
-				height: 38px" /></a>
-
+				
 			</div>
-
+			
  		</div>
-</footer>
+	</footer>
 
 
 </div> <!-- top div -->
+
+
 
 </body>
 
