@@ -12,14 +12,14 @@ var totalquestions=10
 var correctchoices=new Array()
 correctchoices[1]='a' //question 1 solution
 correctchoices[2]='b' //question 2 solution, and so on.
-correctchoices[3]='b'
+correctchoices[3]='c'
 correctchoices[4]='a'
-correctchoices[5]='c'
-correctchoices[6]='d'
-correctchoices[7]='b'
-correctchoices[8]='c'
+correctchoices[5]='a'
+correctchoices[6]='a'
+correctchoices[7]='a'
+correctchoices[8]='d'
 correctchoices[9]='a'
-correctchoices[10]='c'
+correctchoices[10]='a'
 
 /////Don't edit beyond here//////////////////////////
 
