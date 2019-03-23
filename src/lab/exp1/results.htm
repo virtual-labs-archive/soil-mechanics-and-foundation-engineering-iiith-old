@@ -2,6 +2,20 @@
 
 <head>
 <title>Instant Quiz Results</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+        table{
+          text-align: center;
+        }
+        td {
+            display: block;
+            float: left;
+            width: 95%;
+        }
+        td input, td textarea {
+            max-width: 100%;
+        }
+    </style>
 </head>
 
 <body bgcolor="#FFFFFF">
@@ -12,14 +26,14 @@
 </script>
 
 <big>Instant Quiz Results</big></font></strong></p>
-<div align="center"><center>
+<div align="center">
 
 <table border="0" cellspacing="0" cellpadding="0">
   <tr>
     <td width="100%"><form method="POST" name="result"><table border="0" width="100%" cellpadding="0" height="116">
         <tr>
           <td height="25" bgcolor="#D3FFA8"><strong><font face="Arial">No. of questions you got right:</font></strong></td>
-          <td height="25"><p><input type="text" name="p" size="24"></td>
+          <td height="25"><p><input type="text" name="p" size="24"></p></td>
         </tr>
         <tr>
           <td height="17" bgcolor="#D3FFA8"><strong><font face="Arial">The questions you got wrong:</font></strong></td>
