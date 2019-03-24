@@ -25,28 +25,44 @@ correctchoices[10]='b'
 
 function gradeit(){
 var incorrect=null
+var flag=0
 for (q=1;q<=totalquestions;q++){
 	var thequestion=eval("document.myquiz.question"+q)
-	for (c=0;c<thequestion.length;c++){
-		if (thequestion[c].checked==true)
-		actualchoices[q]=thequestion[c].value
-		}
+        if(flag!=2){
+		 flag=0	
+		for (c=0;c<thequestion.length;c++){
+			if (thequestion[c].checked==true){
+				actualchoices[q]=thequestion[c].value
+	        	        flag=1;
+                	        }   			
+			}
+        	if (flag==0){
+			//alert("Please Attempt all the Questions!")
+                	//document.myquiz.reset()
+			flag = 2;
+  			}
 		
-	if (actualchoices[q]!=correctchoices[q]){ //process an incorrect choice
-		if (incorrect==null)
-		incorrect=q
-		else
-		incorrect+="/"+q
+		if (actualchoices[q]!=correctchoices[q]){ //process an incorrect choice
+			if (incorrect==null)
+			incorrect=q
+			else
+			incorrect+="/"+q
+			}
 		}
 	}
-
-if (incorrect==null)
-incorrect="a/b"
-document.cookie='q='+incorrect
-if (document.cookie=='')
-alert("Your browser does not accept cookies. Please adjust your browser settings.")
-else
-window.location="results.htm"
+if(flag==2){
+	alert("Please Attempt all the Questions!")
+        document.myquiz.reset()
+	}
+else{
+	if (incorrect==null)
+	incorrect="a/b"
+	document.cookie='q='+incorrect
+	if (document.cookie=='')
+	alert("Your browser does not accept cookies. Please adjust your browser settings.")
+	else
+	window.location="results.htm"
+	}
 }
 
 
