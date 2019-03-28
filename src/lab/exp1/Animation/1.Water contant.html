@@ -12,6 +12,29 @@
 
 </script>
 <!-- Google Analytics Code ends here -->
+<!-- script for replay button -->
+<script type="text/javascript">
+  function getFlashMovieObject(movieName){
+  if (window.document[movieName]){
+      return window.document[movieName];
+  }
+
+  if (navigator.appName.indexOf("Microsoft Internet")==-1){
+    if (document.embeds && document.embeds[movieName])
+      return document.embeds[movieName]; 
+  }else // if (navigator.appName.indexOf("Microsoft Internet")!=-1)
+  {
+    return document.getElementById(movieName);
+  }
+}
+
+function RewindFlashMovie()
+{
+	var flashMovie=getFlashMovieObject("1.Water contant");
+	flashMovie.Rewind();
+  flashMovie.Play();
+}
+</script>
 </head>
 <body>
 <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" 
@@ -23,12 +46,13 @@
 
   <param name="quality" value="high" /> 
 
-  <embed src="1.Water contant.swf" quality="high"
-      width=100% height=100% name="1.Water contant" align="" 
+  <embed swliveconnect="true" src="1.Water contant.swf" quality="high"
+      width=100% height=94% name="1.Water contant" align="" 
       type="application/x-shockwave-flash" 
-      pluginspage="http://www.macromedia.com/go/getflashplayer"> 
+      pluginspage="http://www.macromedia.com/go/getflashplayer" loop="false"> 
   </embed> 
 
 </object>
+<input style="margin-left: 45%; width:10%" type="button" value="Replay" onclick="RewindFlashMovie()">
 </body>
 </html>
