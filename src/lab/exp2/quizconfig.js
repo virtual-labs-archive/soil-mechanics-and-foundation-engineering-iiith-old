@@ -38,13 +38,20 @@ for (q=1;q<=totalquestions;q++){
 		}
 	}
 
-if (incorrect==null)
-incorrect="a/b"
-document.cookie='q='+incorrect
-if (document.cookie=='')
-alert("Your browser does not accept cookies. Please adjust your browser settings.")
-else
-window.location="results.htm"
+	if (incorrect==null)
+		incorrect="a/b"
+	document.cookie='q='+incorrect
+	if (document.cookie=='')
+		alert("Your browser does not accept cookies. Please adjust your browser settings.")
+	else
+	{
+		window.location="results.htm"
+		document.myquiz.reset();
+		for(var i=1;i<=totalquestions;i++)
+		{
+			actualchoices[i]='z';
+		}
+	}
 }
 
 
