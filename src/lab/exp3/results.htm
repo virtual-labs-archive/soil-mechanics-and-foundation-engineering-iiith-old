@@ -43,24 +43,23 @@
 var wrong=0
 for (e=0;e<=2;e++)
 document.result[e].value=""
-
 var results=document.cookie.split(";")
 for (n=0;n<=results.length-1;n++){
 if (results[n].charAt(1)=='q')
 parse=n
-
+if (results[n].charAt(1)=='g')
+parse2=n
 }
-
 var incorrect=results[parse].split("=")
 incorrect=incorrect[1].split("/")
+var count=results[parse2].split("=")
+fin=count[1]
 if (incorrect[incorrect.length-1]=='b')
 incorrect=""
-document.result[0].value=totalquestions-incorrect.length+" out of "+totalquestions
-document.result[2].value=(totalquestions-incorrect.length)/totalquestions*100+"%"
+document.result[0].value=totalquestions-incorrect.length-fin+" out of "+totalquestions
+document.result[2].value=(totalquestions-incorrect.length-fin)/totalquestions*100+"%"
 for (temp=0;temp<incorrect.length;temp++)
 document.result[1].value+=incorrect[temp]+", "
-
-
 </script>
 
 <input type="button" value="Take the quiz again" name="B1"
@@ -71,3 +70,5 @@ document.result[1].value+=incorrect[temp]+", "
 
 </body>
 </html>
+
+  
