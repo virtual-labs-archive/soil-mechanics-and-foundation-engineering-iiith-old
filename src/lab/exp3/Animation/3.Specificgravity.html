@@ -9,9 +9,14 @@
 
   ga('create', 'UA-42255654-1', 'virtual-labs.ac.in');
   ga('send', 'pageview');
-
 </script>
 <!-- Google Analytics Code ends here -->
+<script>
+  function displayManual(){
+  document.getElementById("p1").innerHTML = "For given temperature and pressure, a substance (here, water) with a lower relative density tends to float on the reference substance (here, soil)."
+  document.getElementById("p2").innerHTML = "From figure 3, it is clear that water does not intermix with soil and the soil tends to settle at the bottom. This can be verified by comparing their relative densities."
+  }
+  </script>
 </head>
 <body>
 <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" 
@@ -22,6 +27,9 @@
   <param name="movie" value="3.Specificgravity.swf" /> 
 
   <param name="quality" value="high" /> 
+  <button id="manual" onclick="displayManual()">Manual</button>
+  <p id = "p1"> </p>
+  <p id = "p2"> </p>
 
   <embed src="3.Specificgravity.swf" quality="high"
       width=100% height=100% name="3.Specificgravity" align="" 
