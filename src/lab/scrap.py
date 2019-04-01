@@ -54,7 +54,7 @@ heading=str(tagger[0].text)
 print heading
 heading=heading.strip()
 print heading
-breadcrumb='<a href="http://vlabs.ac.in/civil-engineering-labs.html" class="sidebar-a" >Civil Engineering</a><br/>'
+breadcrumb='<a href="http://vlab.co.in/broad-area-civil-engineering" class="sidebar-a" >Civil Engineering</a><br/>'
 while sectionNumber<=len(sectionno):
 	tag=""
 	att = ''+'lab-article-section-'+str(sectionNumber)+'-heading'
