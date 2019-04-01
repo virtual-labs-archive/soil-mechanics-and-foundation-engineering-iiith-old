@@ -53,7 +53,7 @@ window.onload = function () {
 }
 function showsolution() {
 	document.getElementById("solutionTableBody").innerHTML = "";
-	this.disabled=true
+	this.disabled = true
 	document.getElementById("showsolution").hidden = false;
 	for (var i = totalquestions; i >= 1; i--) {
 		var colo = "green"
