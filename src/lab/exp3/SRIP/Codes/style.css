@@ -1,0 +1,13 @@
+/* IMPORTING QUESTRIAL GOOGLE FONT */
+
+@import url('https://fonts.googleapis.com/css?family=Questrial&display=swap');
+
+.main-heading {
+	
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Questrial', sans-serif;
+  color: #023141;
+  margin-right: 15px;
+	
+}
