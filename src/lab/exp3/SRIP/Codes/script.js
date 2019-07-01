@@ -1,67 +1,72 @@
-(function(root, factory) {
-  /* istanbul ignore next */
-  if (typeof define === 'function' && define.amd) {
+
+
+var draw = SVG("animation").size(1000, 500)
+
+
+function myFunction(x) {
+  if (x.matches) { // If media query matches
 	  
-    define(function(){
-		
-      return factory(root, root.document)
-		
-    })
-  } else if (typeof exports === 'object') {
+draw.clear();
+  var tankLeft = draw.polyline([
+    [200, 200],
+    [220, 220],
+    [220, 450],
+    [400, 450],
+    [400, 220],
+    [420, 200]
+  ]).fill('none').stroke({
+    width: 3,
+  });
+	
+  } else {
 	  
-    module.exports = root.document ? factory(root, root.document) : function(w){ return factory(w, w.document) }
+ draw.clear();
+  var tankLeft = draw.polyline([
+    [100, 100],
+    [220, 220],
+    [220, 450],
+    [400, 450],
+    [400, 220],
+    [420, 200]
+  ]).fill('none').stroke({
+    width: 3,
+  });
+	  
+	  var paddleWidth = 20, paddleHeight = 100
+
+// create and position left paddle
+var paddleLeft = draw.rect(paddleWidth, paddleHeight)
+
+paddleLeft.x(0).cy(height/2).fill('#00ff99')
+
+// create and position right paddle
+var paddleRight = paddleLeft.clone()
+
+paddleRight.x(width-paddleWidth).fill('#ff0066')
+	  
+	  var playerLeft = playerRight = 0
+
+// create text for the score, set font properties
+var scoreLeft = draw.text(playerLeft+'').font({
+  size: 32,
 	
-  } 
-	else {
-		
-    root.SVG = factory(root, root.document)
-		
-  }
-}(typeof window !== "undefined" ? window : this, function(window, document) {
-
-
-var globalRef = (typeof this !== "undefined") ? this : window;
-
-
-var SVG = globalRef.SVG = function(element) {
+  family: 'Menlo, sans-serif',
+  anchor: 'end',
 	
-  if (SVG.supported) {
-    element = new SVG.Doc(element)
+  fill: '#fff'
+}).move(width/2-10, 10)
 
-    if(!SVG.parser.draw)
-		
-      SVG.prepare()
+// cloning rocks!
+var scoreRight = scoreLeft.clone()
 
-    return element
+  .text(playerRight+'')
+
+  .font('anchor', 'start')
+  .x(width/2+10)
+	  
   }
 }
 
-SVG.invent = function(config) {
-	
-  // Create element initializer
-	
-  var initializer = typeof config.create == 'function' ?
-	  
-    config.create :
-    function() {
-		
-      this.constructor.call(this, SVG.create(config.create))
-    }
-
-  // Inherit prototype
-  if (config.inherit)
-	  
-    initializer.prototype = new config.inherit
-
-  // Extend with methods
-  if (config.extend)
-	  
-    SVG.extend(initializer, config.extend)
-
-  // Attach construct method to parent
-  if (config.construct)
-	  
-    SVG.extend(config.parent || SVG.Container, config.construct)
-
-  return initializer
-}
+var x = window.matchMedia("(max-width: 700px)")
+myFunction(x) // Call listener function at run time
+x.addListener(myFunction) // Attach listener function on state changes
