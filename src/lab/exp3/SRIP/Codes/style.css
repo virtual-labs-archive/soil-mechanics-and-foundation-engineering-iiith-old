@@ -12,3 +12,52 @@
 	
 }
 
+/* ADDING STYLE TO START BUTTON */
+
+.start {
+	
+  color: #fff;
+  font-family: 'Questrial', sans-serif;
+  display: inline-block;
+  padding: 10px;
+  margin: 10px auto;
+  cursor: pointer;
+  text-align: center;
+  font-size: 15px;
+  margin-right: 10px;
+	
+}
+
+
+/* ADDING STYLE TO RESET BUTTON */
+
+.reset {
+	
+  color: #fff;
+  font-family: 'Questrial', sans-serif;
+  display: inline-block;
+  padding: 10px;
+  margin: 10px auto;
+  cursor: pointer;
+  text-align: center;
+  font-size: 15px;
+  margin-right: 10px;
+	
+}
+
+
+/* ADDING STYLE TO CALCULATIONS BUTTON */
+
+.calc-button {
+	
+  color: #fff;
+  font-family: 'Questrial', sans-serif;
+  display: inline-block;
+  padding: 10px;
+  margin: 10px auto;
+  cursor: pointer;
+  text-align: center;
+  font-size: 15px;
+  margin-right: 10px;
+	
+}
