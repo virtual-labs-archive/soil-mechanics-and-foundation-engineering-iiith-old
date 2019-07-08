@@ -2,6 +2,10 @@
 
 @import url('https://fonts.googleapis.com/css?family=Questrial&display=swap');
 
+
+.animation {
+	height: 600px;
+}
 .main-heading {
 	
   text-align: center;
@@ -59,5 +63,132 @@
   text-align: center;
   font-size: 15px;
   margin-right: 10px;
+	
+}
+
+
+
+.beaker2 {
+	
+  width: 68px;
+  background-color: saddlebrown;
+  height: 0px;
+  position: absolute;
+  left: 461px;
+  top: 381px;
+	
+}
+
+.beaker3soil {
+	
+  width: 68px;
+  background-color: saddlebrown;
+  height: 0px;
+  position: absolute;
+  left: 761px;
+  top: 381px;
+	
+}
+
+.beaker3water {
+	
+  width: 68px;
+  background-color: #00B0EA;
+  height: 0px;
+  position: absolute;
+  left: 761px;
+  top: 334px;
+	
+}
+.beaker4 {
+	
+  width: 68px;
+  background-color: #00B0EA;
+  height: 0px;
+  position: absolute;
+  left: 1061px;
+  top: 381px;
+	
+}
+
+.form-class {
+	
+  top: 80px;
+  bottom: 20px;
+  right: 30px;
+  z-index: 9;
+	
+}
+
+.calculations {
+	
+  background: #283048;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #859398, #283048);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #859398, #283048);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	
+}
+
+
+/* Add styles to the form container */
+
+.form-container {
+	
+  max-width: 100%;
+  background: #283048;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #859398, #283048);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #859398, #283048);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+	
+}
+
+.form-container input[type=number] {
+	
+  width: 75%;
+  padding: 8px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+	
+}
+
+
+/* "CALCULATE!" BUTTON */
+
+.form-container .btn {
+	
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 40%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+  margin-right: 20px;
+  padding: 10px;
+	
+}
+
+
+/* "CLEAR" BUTTON */
+
+.form-container .clear-btn {
+	
+  background-color: steelblue;
+	
+}
+
+
+/* Add some hover effects to buttons */
+
+.form-container .btn:hover,
+.open-button:hover {
+	
+  opacity: 1;
 	
 }
