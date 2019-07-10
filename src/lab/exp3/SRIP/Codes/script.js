@@ -172,6 +172,84 @@ calcButton.onclick = function () {
 }
 
 
+function calculate() {
+	
+	var mass1 = document.getElementById("mass1").value;
+
+  var mass2 = document.getElementById("mass2").value;
+
+  var mass3 = document.getElementById("mass3").value;
+
+  var mass4 = document.getElementById("mass4").value;
+	
+	
+	
+	if (mass1 == null || mass1 == "", mass2 == null || mass2 == "", mass3 == null || mass3 == "", mass4 == null || mass4 == "") {
+    alert("Please fill all the inputs!");
+    return false;
+  }
+
+  try {
+    // HANDLING EXCEPTIONS
+    if (mass1 <= 0 || mass2 <= 0 || mass3 <= 0 || mass4 <= 0) {
+      throw ("Invalid input(s)! Value of mass should be positive.");
+    }
+	  
+	  else if (mass1 > mass2 || mass1 > mass3 || mass1 > mass4 || mass2 > mass3) {
+		  throw("Illogical Input(s)! Mass of empty pycnometer should be less than that of a filled one AND Mass of pycnometer filled with soil should be less than that filled with soil and water both.")
+	  }
+
+    else {
+		
+		var num = parseFloat(mass2) - parseFloat(mass1);
+		var den = (num + parseFloat(mass4)) - parseFloat(mass3);
+		
+		var specificGravity = num/den;
+		
+		
+		 if (!isNaN(specificGravity)) {
+
+
+       
+        alert("Specific Gravity of the soil is: " + specificGravity );
+
+
+      }
+      else {
+        alert("NaN");
+      }
+	}
+	
+}
+	catch (e) {
+    alert("Error: " + e);
+}
+}
+
+
+resultButton = document.getElementById("result");
+
+resultButton.onclick = function () {
+  calculate();
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function toggle() {
 
 

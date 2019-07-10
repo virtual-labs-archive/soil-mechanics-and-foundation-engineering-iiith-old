@@ -4,7 +4,7 @@
 
 
 .animation {
-	height: 600px;
+	height: 450px;
 }
 .main-heading {
 	
@@ -129,6 +129,7 @@
   background: linear-gradient(to right, #859398, #283048);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	
+	
 }
 
 
@@ -144,6 +145,7 @@
   background: linear-gradient(to right, #859398, #283048);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: white;
+margin-left: 30px;
 	
 }
 
@@ -154,7 +156,7 @@
   margin: 5px 0 22px 0;
   border: none;
   background: #f1f1f1;
-	
+
 }
 
 
@@ -171,6 +173,7 @@
   opacity: 0.8;
   margin-right: 20px;
   padding: 10px;
+	margin-top: 10px;
 	
 }
 
@@ -180,6 +183,7 @@
 .form-container .clear-btn {
 	
   background-color: steelblue;
+
 	
 }
 
@@ -192,3 +196,4 @@
   opacity: 1;
 	
 }
+
