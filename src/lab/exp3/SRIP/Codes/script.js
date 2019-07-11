@@ -2,19 +2,48 @@
 
 var draw = SVG("animation").size(1300, 500)
 
-
-function myFunction(x) {
+	  var startButton = document.getElementById("start");
+function experimentSetup(x) {
   if (x.matches) { // If media query matches
 	  draw.clear();
 
 	 
 	  alert("Please view the experiment in full desktop browser window!")
+	  var animation = document.getElementById("animation");
+	  animation.style.height = "10px";
 	  
+	  	  var startButton = document.getElementById("start");
+
+startButton.onclick = function () {
+
+  alert("Please view the experiment in full desktop browser window!");
+
+
+}
+	  
+
  
   } else {
 	  
  draw.clear();
+  var animation = document.getElementById("animation");
+	  animation.style.height = "450px";
+	  
+	  var startButton = document.getElementById("start");
 
+startButton.onclick = function () {
+
+  toggleAnimation();
+
+  setTimeout(function () {
+    alert('Simulation Completed!');
+    location.reload();
+  }, 7900)
+
+
+}
+	  
+	  
 	var tableTop1 = draw.rect(200,50).attr ({
 		'fill': 'gray',
 		x: 100,
@@ -88,6 +117,9 @@ function myFunction(x) {
  
   }
 }
+var x = window.matchMedia("(max-width: 1100px)")
+experimentSetup(x) // Call listener function at run time
+x.addListener(experimentSetup) // Attach listener function on state changes
 
 function toggleAnimation() {
 	
@@ -136,27 +168,12 @@ function toggleAnimation() {
 
 }
 
-var x = window.matchMedia("(max-width: 1100px)")
-myFunction(x) // Call listener function at run time
-x.addListener(myFunction) // Attach listener function on state changes
 
 
 
-var startButton = document.getElementById("start");
+
+
 var resetButton = document.getElementById("reset");
-
-
-startButton.onclick = function () {
-
-  toggleAnimation();
-
-  setTimeout(function () {
-    alert('Simulation Completed!');
-    location.reload();
-  }, 7900)
-
-
-}
 
 resetButton.onclick = function () {
   location.reload();
