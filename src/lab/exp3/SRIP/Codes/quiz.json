@@ -1,0 +1,225 @@
+{
+    "artciles": [
+        {
+            "quiztitle":"Quiz for Experiment",
+            "containers":"5"
+        },
+        {
+            "q": "1. It is necessary to mention the temperature at which specific gravity is calculated, because of the following reasons:",
+            "option": [
+"Mass of the substance changes with temperature",
+"Rigidity of the substance changes with temperature",
+"Density of the substance changes with temperature",
+"None of the mentioned"
+            ],
+            "answer": "Density of the substance changes with temperature",
+            "description": "Since the volume of the substance changes with temperature, which means density of the substance changes with temperature, that’s why it is required to mention the temperature at which specific gravity is calculated."
+        },
+        {
+            "q": " What is the unit of specific gravity?",
+            "option": [
+				"Kg/m3",
+				"N/m3",
+				"m/s2",
+				"Dimensionless"
+
+            ],
+            "answer": "Dimensionless",
+            "description": "Specific gravity of a substance is the ratio of density of the substance and density of a reference substance, so it is dimensionless."
+
+        },
+        {
+            "q": "A soil sample is having a specific gravity of 2.60 and a void ratio of 0.78. The water content in percentage required to fully saturate the soil at that void ratio will be",
+            "option": [
+              "10", "20", "30", "70"
+            ],
+            "answer": "30",
+            "description": "Basics"
+        },
+        {
+            "q": "The specific gravity of a soil is the ratio of unit weight of soil solids to that of water at a temperature of",
+            "option": [
+                "4 deg C","17 deg C","27 deg C","36 deg C"
+            ],
+            "answer": "27 deg C",
+            "description": "Basics"
+        },
+        {
+            "q": "A dry soil sample weighing 100 g has volume of 60 ml and specific gravity 2.5. Its void ratio is",
+            "option": [
+               "0.4", "0.6", "0.5", "0.8"
+            ],
+            "answer": "0.5",
+            "description": "Basics"
+        },
+        {
+            "q": "For a given soil mass, the void ratio is 0.60, water content is 18% and specific gravity of the soil particles is 2.6. The degree of saturation of the soil is",
+            "option": [
+               "30%", "50%", "78%", "82.50%"
+            ],
+            "answer": "78%",
+            "description": "Basics"
+        },
+        {
+            "q": "The water content of soils can be accurately determined by",
+            "option": [
+           "sand bath method", "calcium carbide method", "over drying method", "D.	Pycnometer method"
+            ],
+            "answer": "over drying method",
+            "description": "Basics"
+        },
+        {
+            "q": "The quantity of seepage of water through soils is proportional to",
+            "option": [
+                "coefficient of permeability of soil", "total head loss through the soil",  "both"
+            ],
+            "answer": "both",
+            "description": "logical"
+        },
+        {
+            "q": "The specific gravity of soil solids is determined by",
+            "option": [
+                "Pycnometer method","hydrometer analysis",  "sieve analysis","All of these"
+            ],
+            "answer": "Pycnometer method",
+            "description": "Basics"
+        },
+        {
+            "q": "If the volume of voids is equal to the volume of soil solids, then the values of porosity and void ratio are respectively",
+            "option": [
+          	"0 and 0.5", "0 and 1", "0.5 and 1", "1 and 0.5"
+            ],
+            "answer": "0.5 and 1",
+            "description": "basics"
+        },
+        {
+            "q": "Stoke's law is used to determine the",
+            "option": [
+                "specific gravity of soil solids",
+                "density of soil suspension",
+                "grain size distribution of those soils whose grain size is finer than 0.075 mm",
+				"None"
+            ],
+            "answer": "grain size distribution of those soils whose grain size is finer than 0.075 mm",
+            "description": "basics"
+        },
+        {
+            "q": "According to Stoke's law, the velocity at which grains settle out of suspension, all other factors being equal, is dependent upon",
+            "option": [
+                "shape of the grain",   "weight of the grain",   "size of the grain",	"All of these"
+            ],
+            "answer": "All of these",
+            "description": "Basics"
+        },
+        {
+            "q": " Mass of a substance is changing with respect to its volume as m = -v3 + 3v2 -2v, what is the maximum specific gravity of the substance between v = 1 m3 and v = 2 m3? (Density of reference substance = 0.25 kg/m3)",
+            "option": [
+          "1", "2", "3", "4"
+            ],
+            "answer": "1",
+            "description": " Density of substance D = m/v = -v2 + 3v – 2, => Specific gravity of substance S = D/0.25 = 4(-v2 + 3v – 2), => dS/dv = 4(-2v + 3) = 0, => v = 1.5, => S is maximum at v = 1.5, => maximum specific gravity = 4(-1.52 + 3*1.5 – 2) = 1."
+        },
+        {
+            "q": "API gravity is measured in",
+            "option": [
+                "Gravity meter scale",
+                "Hydrometer scale",
+                "Richer scale",
+				"None"
+            ],
+            "answer": "Hydrometer scale",
+            "description": "Basics"
+        },
+        {
+            "q": "A compacted soil sample using 10% moisture content has a weight of 200 g and mass unit weight of 2.0 g/cm3. If the specific gravity of soil particles and water are 2.7 and 1.0, the degree of saturation of the soil is",
+            "option": [
+                "55.6%", "11.1%",  "69.96%"
+            ],
+            "answer": "55.6%",
+            "description": "Degree of Saturation (S) = G*w/e."
+        },
+        {
+            "q": " What is the specific gravity of 10 Kg of water occupied in 10 m3 with respect to 200 g/m3?",
+            "option": [
+            "0.2", "0.5", "1" , "5"
+            ],
+            "answer": "5",
+            "description": "Formulae based"
+        },
+        {
+            "q": "The ratio of the volume of voids to the volume of soil solids in a given soil mass, is known",
+            "option": [
+                "porosity", "specific gravity",  "void ratio"
+            ],
+            "answer": "void ratio",
+            "description": "Basics"
+        },
+        {
+            "q": "A soil is in a semi-solid state, if the consistency index is",
+            "option": [
+           "0", "1", "More than 1", "None"
+            ],
+            "answer": "More than 1",
+            "description": "Basics"
+        },
+        {
+            "q": " Mass of empty pycnometer is 37.40 grams. When it is filled with some dry soil, the mass of the pycnometer is 63.49 grams. The remaining space in the pycnometer is filled with some water and the mass measured is 153.61 grams. Mass of a similar pycnometer completely filled with water is 137.37 grams. Calculate the specific gravity of soil.",
+            "option": [
+               "3.85", "0.56", "2.65", "None"
+            ],
+            "answer": "2.65",
+            "description": "WP = 37.40 g, WPS = 63.49 g, WB = 153.61 g, WA = 137.37, Wo = 63.49 – 37.40 = 26.09 g, Gs = (26.09) / [26.09 + (137.37 -153.61)] = 2.65"
+        },
+        {
+            "q": "Degree of saturation of a natural soil deposit having water content 15%, specific gravity 2.50 and void ratio 0.5, is",
+            "option": [
+                "50%", "75%", "both"
+            ],
+            "answer": "75%",
+            "description": "refer above questions"
+        },
+        {
+            "q": "The coefficient of compressibility of soil, is the ratio of",
+            "option": [
+                "stress to settlement",
+                "strain to stress",
+                "rate of loading to that of settlement."
+            ],
+            "answer": "strain to stress",
+            "description": "Basics"
+        },
+        {
+            "q": "The bulk density of coarse grained soils can be determined by",
+            "option": [
+                "Sand replacement method","Core cutter method","Pycnometer method","None"
+            ],
+            "answer": "Core cutter method",
+            "description": "Basics"
+        },
+        {
+            "q": "Dry density of soil can be defined as the ratio of",
+            "option": [
+                "Weight of solids to total volume", "Weight of soil to the total volume of solids", "Unit weight of the soil to the unit weight of water",
+				"None"
+            ],
+            "answer": "Weight of solids to total volume",
+            "description": "Basics"
+        },
+        {
+            "q": "The water content of soil is defined as the ratio of",
+            "option": [
+                "volume of water to volume of given soil","weight of water to weight of solids of given mass of soil.",  "None"
+            ],
+            "answer": "weight of water to weight of solids of given mass of soil.",
+            "description": "Basics"
+        },
+        {
+            "q": "Different soils have different unit weights",
+            "option": [
+           "True", "False", "Cannot be said"
+            ],
+            "answer": "Cannot be said",
+            "description": "Basics"
+        }
+    ]
+}
