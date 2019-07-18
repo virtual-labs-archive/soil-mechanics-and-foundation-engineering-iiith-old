@@ -235,7 +235,7 @@ function calculate() {
       throw ("Invalid input(s)! Value of mass should be positive.");
     }
 
-    else if (parseFloat(mass1) > parseFloat(mass2)|| parseFloat(mass1) > parseFloat(mass3) || parseFloat(mass1) > parseFloat(mass4) || parseFloat(mass2) > parseFloat(mass3)) {
+    else if (parseFloat(mass1) >= parseFloat(mass2)|| parseFloat(mass1) >= parseFloat(mass3) || parseFloat(mass1) >= parseFloat(mass4) || parseFloat(mass2) >= parseFloat(mass3)) {
       throw ("Illogical Input(s)! Mass of empty pycnometer should be less than that of a filled one AND Mass of pycnometer filled with soil should be less than that filled with soil and water both.")
    }
 
