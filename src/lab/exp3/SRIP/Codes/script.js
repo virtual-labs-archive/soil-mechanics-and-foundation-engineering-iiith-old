@@ -143,7 +143,23 @@ function experimentSetup(x) {
       'fill': 'none',
 
     });
-
+	  var labelWater = draw.rect (20,20).attr ({
+		  x: 620,
+		  y: 430,
+		  'fill': '#00B0EA',
+		  'stroke': 'black',
+		   'stroke-width': 2
+	
+	  });
+	  
+	   var labelSoil = draw.rect(20,20).attr ({
+		  x: 695,
+		  y: 430,
+		  'fill': 'saddlebrown',
+		   'stroke': 'black',
+		   'stroke-width': 2
+	
+	  });
 
   }
 }
@@ -273,4 +289,147 @@ resultButton.onclick = function () {
 
 
 }
+
+function toggleAnimationAlt() {
+
+
+  // HORIZONTAL WATER ANIMATIONS USING SVG.JS
+
+  var incomingPipeHorizontal = DRAW.rect(1, 18).attr({
+    'fill': '#00B0EA',
+    x: 151,
+    y: 151
+  });
+
+  incomingPipeHorizontal.animate().size(148, 18);
+
+  var incomingPipeVertical = DRAW.rect(18, 0.01).attr({
+    'fill': '#00B0EA',
+    x: 281,
+    y: 168
+  });
+
+  incomingPipeVertical.animate({
+    delay: '1s'
+  }).size(18, 280);
+
+  var ductRect = DRAW.rect(0.01, 23).attr({
+    x: 401,
+    y: 381,
+    'fill': '#00B0EA'
+  });
+
+  ductRect.animate(4600, '', 2500).size(307, 23)
+
+  ductTriangle1 = DRAW.polygon([
+    [401, 404],
+    [401, 433],
+    [401.1, 401]
+  ]).attr({
+    'fill': '#00B0EA'
+  });
+
+  ductTriangle1.animate(1000, '', 2500).size(70, 21.5);
+
+  ductTriangle2 = DRAW.polygon([
+    [650.5, 401],
+    [652.1, 400],
+    [652.1, 406.5]
+  ]).attr({
+    'fill': '#00B0EA'
+  });
+
+  ductTriangle2.animate(920, '', 6210).size(57.8, 23.3);
+
+
+  var outgoingPipeHorizontal = DRAW.rect(0.01, 18).attr({
+    'fill': '#00B0EA',
+    x: 891,
+    y: 391
+  });
+
+  outgoingPipeHorizontal.animate({
+    delay: '7.6s'
+  }).size(108, 18);
+
+  var outgoingPipeVertical = DRAW.rect(18, 0.01).attr({
+    'fill': '#00B0EA',
+    x: 981,
+    y: 409
+  });
+
+  outgoingPipeVertical.animate({
+    delay: '8.6s'
+  }).size(18, 139);
+
+
+  // VERTICAL WATER ANIMATIONS USING JQUERY
+
+  $('#tankLeft')
+    .animate({
+      'height': 0
+    }, 2000)
+    .animate({
+      'height': 150,
+      'top': 405
+    }, 1000)
+
+  $('#verticalPipe1')
+    .animate({
+      'height': 0
+    }, 3200)
+    .animate({
+      'height': 145,
+      'top': 341
+    }, 1000)
+
+  $('#verticalPipe2')
+    .animate({
+      'height': 0
+    }, 4200)
+    .animate({
+      'height': 115,
+      'top': 371
+    }, 1000)
+
+  $('#verticalPipe3')
+    .animate({
+      'height': 0
+    }, 5200)
+    .animate({
+      'height': 85,
+      'top': 401
+    }, 1000)
+
+  $('#verticalPipe4')
+    .animate({
+      'height': 0
+    }, 6200)
+    .animate({
+      'height': 55,
+      'top': 431
+    }, 1000)
+
+
+  $('#tankRight')
+    .animate({
+      'height': 0
+    }, 7200)
+    .animate({
+      'height': 150,
+      'top': 405
+    }, 1000)
+
+  $('#measureTank')
+    .animate({
+      'height': 0
+    }, 9600)
+    .animate({
+      'height': 60,
+      'top': 596
+    }, 1000)
+
+
+}
+
 

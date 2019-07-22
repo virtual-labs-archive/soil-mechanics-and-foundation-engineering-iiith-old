@@ -2,7 +2,11 @@
 
 @import url('https://fonts.googleapis.com/css?family=Questrial&display=swap');
 
-
+.label1 {
+	text-align: center;
+	margin-right: 20px;
+	
+}
 .animation {
 	height: 450px;
 }
