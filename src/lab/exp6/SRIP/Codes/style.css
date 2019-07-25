@@ -24,6 +24,8 @@ text-align: center;
 
 /* ADDING STYLE TO START BUTTON */
 
+
+
 .start {
 	
   color: #fff;
@@ -71,6 +73,15 @@ text-align: center;
   font-size: 15px;
 
 	
+}
+
+.upperTankHorizontal {
+	  width: 178px;
+  background-color: #00B0EA;
+  height: 37px;
+  position: absolute;
+  left: 591px;
+  top: 458px;
 }
 
 
