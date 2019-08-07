@@ -233,7 +233,6 @@ calcButton.onclick = function () {
 
 
 function calculate() {
-
   
 }
 
