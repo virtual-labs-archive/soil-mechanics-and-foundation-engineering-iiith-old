@@ -120,7 +120,7 @@ text.move(815,135).font({ fill: '#f06', family: 'Inconsolata' })
 	  
   }
 }
-var x = window.matchMedia("(max-width: 100px)")
+var x = window.matchMedia("(max-width: 1100px)")
 experimentSetup(x) // Call listener function at run time
 x.addListener(experimentSetup) // Attach listener function on state changes
 

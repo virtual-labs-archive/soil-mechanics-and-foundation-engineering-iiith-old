@@ -58,7 +58,14 @@ text-align: center;
 	
 }
 
-
+.measure-jar {
+	width: 47px;
+  background-color: #00B0EA;
+  height: 30px;
+  position: absolute;
+  left: 851px;
+  top: 724px;
+}
 /* ADDING STYLE TO CALCULATIONS BUTTON */
 
 .calc-button {

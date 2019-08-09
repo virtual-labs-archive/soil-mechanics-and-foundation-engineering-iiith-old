@@ -87,8 +87,33 @@ function experimentSetup(x) {
 			
 			//LABELS
 			
+	  	
+	  	var text = draw.text('Overhead Tank')
+		text.move(740,30).font({ fill: '#f06', family: 'Inconsolata', })
+		
+		var text = draw.text('Supply')
+		text.move(760,80).font({ fill: '#f06', family: 'Inconsolata', })
 	  
+	  	var text = draw.text('Overflow')
+		text.move(760,145).font({ fill: '#f06', family: 'Inconsolata', })
 	  
+	  	  	  var text = draw.text('h')
+text.move(520,200).font({ fill: '#f06', family: 'Inconsolata' })
+	  
+	    var arrow5 = draw.line([[540,52],[540,450]]).stroke({width: 1})
+		
+		
+		  	  	  var text = draw.text('L')
+text.move(555,370).font({ fill: '#f06', family: 'Inconsolata' })
+	  
+	    var arrow5 = draw.line([[575,320],[575,450]]).stroke({width: 1})
+		
+		
+		 	var text = draw.text('Bottom Tank')
+		text.move(600,555).font({ fill: '#f06', family: 'Inconsolata', })
+	  
+	  var text = draw.text('Measuring Jar')
+		text.move(910,555).font({ fill: '#f06', family: 'Inconsolata', })
   }
 }
 var x = window.matchMedia("(max-width: 100px)")
@@ -152,7 +177,18 @@ var waterDrop1 = draw.ellipse(5,8).fill('#00B0EA').move(600,308)
 		topTankUnfillingLeftSide.animate(13000,'',500).size(112,30)
 	
 		topTankUnfillingRightSide.animate(13000,'',500).size(17,30)
-		
+	
+	
+	$('#measure-jar')
+    .animate({
+      'height': 30
+    }, 1000)
+    .animate({
+      'height': 70,
+      'top': 684
+    }, 14000)
+
+	
 
 		
 	waterDrop1.animate(3000,'<',20).attr({fill: '#8B4513'}).move(600,490).loop(4)
@@ -213,6 +249,8 @@ calcButton.onclick = function () {
   });
 }
 
+	
+		
 
 function calculate() {
   
