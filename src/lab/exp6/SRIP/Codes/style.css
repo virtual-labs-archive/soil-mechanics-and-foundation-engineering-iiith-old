@@ -1,0 +1,173 @@
+/* IMPORTING QUESTRIAL GOOGLE FONT */
+
+@import url('https://fonts.googleapis.com/css?family=Questrial&display=swap');
+
+
+.animation {
+	height: 450px;
+}
+
+.selectpage {
+text-align: center;
+
+}
+
+.main-heading {
+	
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Questrial', sans-serif;
+  color: #023141;
+  margin-right: 15px;
+	
+}
+
+/* ADDING STYLE TO START BUTTON */
+
+
+
+.start {
+	
+  color: #fff;
+  font-family: 'Questrial', sans-serif;
+  display: inline-block;
+  padding: 10px;
+
+  cursor: pointer;
+  text-align: center;
+  font-size: 15px;
+	margin-left: 13px;
+	margin-right: 10px;
+
+	
+}
+
+
+/* ADDING STYLE TO RESET BUTTON */
+
+.reset {
+	
+  color: #fff;
+  font-family: 'Questrial', sans-serif;
+  display: inline-block;
+  padding: 10px;
+
+  cursor: pointer;
+  text-align: center;
+  font-size: 15px;
+
+	
+}
+
+.measure-jar {
+	width: 47px;
+  background-color: #00B0EA;
+  height: 30px;
+  position: absolute;
+  left: 851px;
+  top: 724px;
+}
+/* ADDING STYLE TO CALCULATIONS BUTTON */
+
+.calc-button {
+	
+  color: #fff;
+  font-family: 'Questrial', sans-serif;
+  display: inline-block;
+  padding: 10px;
+ 
+  cursor: pointer;
+  text-align: center;
+  font-size: 15px;
+
+	
+}
+
+.upperTankHorizontal {
+	  width: 178px;
+  background-color: #00B0EA;
+  height: 37px;
+  position: absolute;
+  left: 591px;
+  top: 458px;
+}
+
+
+
+
+.form-class {
+	
+  top: 80px;
+  bottom: 20px;
+  right: 30px;
+  z-index: 9;
+	
+}
+
+
+
+
+/* Add styles to the form container */
+
+.form-container {
+	
+  max-width: 100%;
+  background: #283048;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #859398, #283048);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #859398, #283048);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+margin-left: 30px;
+	
+}
+
+.form-container input[type=number] {
+	
+  width: 75%;
+  padding: 8px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+
+}
+
+
+/* "CALCULATE" BUTTON */
+
+.form-container .btn {
+	
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 40%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+  margin-right: 20px;
+  padding: 10px;
+	margin-top: 10px;
+	
+}
+
+
+/* "CLEAR" BUTTON */
+
+.form-container .clear-btn {
+	
+  background-color: steelblue;
+
+	
+}
+
+
+/* Add some hover effects to buttons */
+
+.form-container .btn:hover,
+.open-button:hover {
+	
+  opacity: 1;
+	
+}
+
